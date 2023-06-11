@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, Navigate } from "react-router-dom";
+import Home from "./routes";
+import Error from "./routes/Error";
+import Attributions from "./routes/Attributions";
+import Contribution from "./routes/Contribution";
+import Description from "./routes/Description";
+import Engineering from "./routes/Engineering";
+import HumanPractices from "./routes/HumanPractices";
+import Education from "./routes/specialPrize/Education";
+import Model from "./routes/specialPrize/Model";
+import Navbar from "./components/layout/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Navbar />
+      <Routes>
+        <Route path="*" element={<Navigate to="/error" replace />} />
+        <Route path="/" element={<Home />} />
 
-export default App
+        {/* Standard URLs */}
+        <Route path="/attributions" element={<Attributions />} />
+        <Route path="/contribution" element={<Contribution />} />
+        <Route path="/description" element={<Description />} />
+        <Route path="/engineering" element={<Engineering />} />
+        <Route path="/human-practices" element={<HumanPractices />} />
+
+        {/* Special Prizes */}
+        <Route path="/education" element={<Education />} />
+        <Route path="/model" element={<Model />} />
+
+        <Route path="/error" element={<Error />} />
+      </Routes>
+    </>
+  );
+};
+
+export default App;
