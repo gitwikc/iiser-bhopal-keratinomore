@@ -1,66 +1,83 @@
-# Team IISER-Bhopal 2023 Wiki
+# KeratiNoMore
 
-This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
+IISER Bhopal [iGEM 2023](https://igem.org/) Wiki
 
-Images, photos, icons and fonts **MUST** be stored on `static.igem.wiki` using [uploads.igem.org](https://uploads.igem.org), and Videos **must** be embedded from [iGEM Video Universe](https://video.igem.org).
+## Description
 
-For up-to-date requirements, resources, help and guidance, visit [competition.igem.org/deliverables/team-wiki](https://competition.igem.org/deliverables/team-wiki).
+This repo contains all the code for IISER Bhopal's 2023 iGEM Wiki.
 
-## Getting started
+## Getting Started
 
-You should probably only edit the files inside folders `static`, `wiki` and `wiki > pages`.
-1. Open the Web IDE
-1. Make the changes on the files you wish:
-    * For the menu, change the file [menu.html](wiki/menu.html)
-    * For the layout, change the file [layout.html](wiki/layout.html)
-    * For the pages, change the corresponding file in the foler [pages](wiki/pages)
-1. Review the changes you made
-1. Once you are done, save the changes by **committing** them to the *main branch* of the repository
-1. An automated script will build, test and deploy your wiki, which should take less than 30 seconds.
+### Dependencies
 
-## About this Template
+You need to have [Node JS](https://nodejs.org/en) installed on your system
 
-### Files
+### Installing
 
-The static assets are in the `static` directory. The layout and templates are in the `wiki` directory, and the pages live in the `wiki > pages` directory. Unless you are an experienced and/or adventurous human, you probably shouldn't change other files.
+- Clone the repo
+  ```bash
+  $ git clone https://github.com/sattwik-sahu/KeratiNoMore keratinomore
+  ```
+- `cd` into the repo folder
 
-    |__ static/             -> static assets (CSS and JavaScript files only)
-    |__ wiki/               -> Main directory for the pages and layouts
-        |__ footer.html     -> Footer that will appear in all the pages
-        |__ layout.html     -> Main layout of your wiki. All the pages will follow its structure
-        |__ menu.html       -> Menu that will appear in all the pages
-        |__ pages/          -> Directory for all the pages
-            |__ *.html      -> Actual pages of your wiki
-    |__ .gitignore          -> Tells GitLab which files/directories should not be uploaded to the repository
-    |__ .gitlab-ci.yml      -> Automated flow for building, testing and deploying your website.
-    |__ LICENSE             -> License CC-by-4.0, all wikis are required to have this license - DO NOT MODIFY
-    |__ README.md           -> File containing the text you are reading right now
-    |__ app.py              -> Python code managing your wiki
-    |__ dependencies.txt    -> Software dependencies from the Python code
+  ```bash
+  $ cd keratinomore
+  ```
 
-### Technologies
+- Install the required `npm` dependencies (You need to have NodeJS installed for this step)
 
-  * [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
-  * [Python](https://www.python.org): Programming language
-  * [Flask](https://palletsprojects.com/p/flask/): Python framework
-  * [Fronzen-Flask](https://pythonhosted.org/Frozen-Flask): Library that builds the wiki to be deployed as a static website
-  * [Bootstrap](https://getbootstrap.com/docs/5.0/components): CSS and JS components used
+  ```bash
+  $ npm install
+  ```
 
-### Building locally (advanced users)
+### Preview
 
-To work locally with this project, follow the steps below:
+- `build` to generate static files in `dist` folder
 
-#### Install
-```bash
-git clone https://gitlab.igem.org/2023/iiser-bhopal.git
-cd iiser-bhopal
-python3 -m venv venv
-. venv/bin/activate # on Linux, MacOS; or
-. venv\Scripts\activate # on Windows
-pip install -r dependencies.txt
-```
+  ```bash
+  $ npm run build
+  ```
 
-#### Execute
-```bash
-python app.py
-```
+- `preview` to start the preview server
+
+  ```bash
+  $ npm run preview
+  ```
+
+- Open the local URL generated, in your browser. It will be in the format <br />`http://localhost:<some number>/`
+
+### Development
+
+- To run the dev server
+
+  ```bash
+  $ npm run dev
+  ```
+
+- Open the URL generated, in your browser
+- Now you can start editing files in the repo to see the changes real-time using hot-module replacement (HMR)
+
+## Contributing
+
+Contributing is restricted to only the members of IISER Bhopal iGEM 2023 team.
+
+## Authors
+
+- Sattwik Sahu ([sattwik-sahu](https://github.com/sattwik-sahu))
+- Kartik Mandar ([kartikmandar](https://github.com/kartikmandar))
+
+## License
+
+This project is licensed under [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](./LICENSE) for more details.
+
+<hr />
+
+> Built with ❤️ using React, NodeJS, coffee and magic! <br /> ![react-icon](https://img.icons8.com/plasticine/32/react.png)![nodejs-icon](https://img.icons8.com/fluency/32/node-js.png)![coffee-icon](https://img.icons8.com/dusk/32/coffee-to-go.png)![magic-icon](https://img.icons8.com/external-others-iconmarket/32/external-magic-fair-others-iconmarket-4.png)
+
+<a  href="https://icons8.com/icon/NfbyHexzVEDk/react">React</a> icon by <a href="https://icons8.com">Icons8</a>
+
+<a  href="https://icons8.com/icon/hsPbhkOH4FMe/node-js">Node Js</a> icon by <a href="https://icons8.com">Icons8</a>
+
+<a  href="https://icons8.com/icon/46983/coffee">Coffee</a> icon by <a href="https://icons8.com">Icons8</a>
+
+<a  href="https://icons8.com/icon/wVkCl5v46O3L/magic">Magic</a> icon by <a href="https://icons8.com">Icons8</a>
