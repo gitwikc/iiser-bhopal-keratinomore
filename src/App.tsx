@@ -9,11 +9,16 @@ import HumanPractices from "./routes/HumanPractices";
 import Education from "./routes/specialPrize/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
+import HomeNav from "./components/layout/HomeNav";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeNav />} />
+        <Route path="*" element={<Navbar />} />
+      </Routes>
+      {/* <Navbar /> */}
       <Routes>
         <Route path="*" element={<Navigate to="/error" replace />} />
         <Route path="/" element={<Home />} />
