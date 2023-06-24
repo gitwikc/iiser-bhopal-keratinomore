@@ -1,0 +1,25 @@
+@import "/src/index.css";
+
+@layer components {
+  .HomeNav {
+    @apply w-full pt-4 flex justify-center items-center absolute top-0;
+  }
+
+  .HomeNav > ul {
+    @apply list-none flex-grow flex justify-evenly items-center;
+  }
+
+  .HomeNav > ul > li {
+    @apply relative transition-all duration-500
+    flex flex-col items-center gap-2 p-6 opacity-30
+    text-dark hover:text-primary-1 hover:opacity-100;
+  }
+
+  .HomeNav > ul > li i.icon {
+    @apply flex justify-center text-2xl;
+  }
+
+  .HomeNav > ul > li .text {
+    @apply text-lg origin-right text-primary-1 -rotate-90 -translate-x-1/2;
+  }
+}

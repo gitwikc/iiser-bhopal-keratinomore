@@ -6,23 +6,26 @@
 
 @layer components {
   body {
-    @apply m-0 p-0 box-border font-sans;
+    @apply m-0 p-0 min-h-screen bg-light box-border font-sans;
   }
 
-  /*
-    Just temporary styles for the Navbar component
-    Neither the component's contents would be same in production,
-    nor these styles.
-  */
-  nav.Navbar {
-    @apply grid place-items-center py-4 px-2 bg-dark text-light;
+  ::-webkit-scrollbar {
+    @apply w-[12px] shadow-none;
   }
 
-  nav.Navbar > ul {
-    @apply flex items-center justify-around gap-4;
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
   }
 
-  nav.Navbar > ul > li > a.active {
-    @apply text-primary-2;
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-primary-2 to-secondary rounded-lg;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }

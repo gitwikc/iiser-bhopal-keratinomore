@@ -1,0 +1,20 @@
+@import "/src/index.css";
+
+@layer components {
+  /*
+    Just temporary styles for the Navbar component
+    Neither the component's contents would be same in production,
+    nor these styles.
+  */
+  nav.Navbar {
+    @apply grid place-items-center py-4 px-2 bg-dark text-light;
+  }
+
+  nav.Navbar > ul {
+    @apply flex items-center justify-around gap-4;
+  }
+
+  nav.Navbar > ul > li > a.active {
+    @apply text-primary-2;
+  }
+}
