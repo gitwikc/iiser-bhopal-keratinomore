@@ -12,6 +12,7 @@ pages:
     - npm install
     - npm run build
     - cp -a dist/. public/
+    - cp 404.html public/
   artifacts:
     paths:
       - public

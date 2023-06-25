@@ -1,0 +1,11 @@
+@import "/src/index.css";
+
+@layer components {
+  .Description {
+    @apply p-8;
+
+    & > .description__content {
+      @apply flex flex-col justify-center gap-12 py-4;
+    }
+  }
+}

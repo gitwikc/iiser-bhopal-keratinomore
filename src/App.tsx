@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from "./routes";
 import Error from "./routes/Error";
 import Attributions from "./routes/Attributions";
@@ -10,8 +10,24 @@ import Education from "./routes/specialPrize/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
 import HomeNav from "./components/layout/HomeNav";
+import { useEffect } from "react";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location);
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        console.log(`Scrolling to #${location.hash}`);
+        element.scrollIntoView();
+      } else {
+        window.scrollTo(0, 0);
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Routes>

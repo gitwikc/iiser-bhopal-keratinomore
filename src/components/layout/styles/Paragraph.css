@@ -1,0 +1,51 @@
+@import "/src/index.css";
+
+@layer components {
+  .Paragraph {
+    @apply px-6 mt-4 py-2 flex flex-col justify-center gap-3
+        border-l-4 border-opacity-40 hover:border-opacity-100
+        transition-all duration-200;
+
+    & > .title {
+      @apply font-serif font-bold;
+    }
+
+    & > .content {
+      @apply font-medium text-dark;
+    }
+
+    & p {
+      @apply mb-3;
+    }
+
+    &[data-hierarchy="0"] {
+      @apply border-l-primary-1 border-opacity-20 hover:border-opacity-100;
+    }
+
+    &[data-hierarchy="1"] {
+      @apply border-l-primary-2 border-opacity-20 hover:border-opacity-80;
+    }
+
+    &[data-hierarchy="2"] {
+      @apply border-l-secondary border-opacity-20 hover:border-opacity-80;
+    }
+  }
+}
+
+.Paragraph[data-hierarchy="0"] {
+  --accent: theme("colors.primary-1");
+  --title-font-size: theme("fontSize.4xl");
+}
+.Paragraph[data-hierarchy="1"] {
+  --accent: theme("colors.primary-2");
+  --title-font-size: theme("fontSize.2xl");
+}
+.Paragraph[data-hierarchy="2"] {
+  --accent: theme("colors.secondary");
+  --title-font-size: theme("fontSize.xl");
+}
+
+.Paragraph > .title {
+  color: var(--accent);
+  font-size: var(--title-font-size);
+}
