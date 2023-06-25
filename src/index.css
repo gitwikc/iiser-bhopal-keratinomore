@@ -10,7 +10,7 @@
   }
 
   ::-webkit-scrollbar {
-    @apply w-[12px] shadow-none;
+    @apply w-[12px] shadow-none bg-transparent;
   }
 
   ::-webkit-scrollbar-track {
@@ -20,12 +20,4 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-gradient-to-b from-primary-2 to-secondary rounded-lg;
   }
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
 }

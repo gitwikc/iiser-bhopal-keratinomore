@@ -20,6 +20,6 @@
   }
 
   .HomeNav > ul > li .text {
-    @apply text-lg origin-right text-primary-1 -rotate-90 -translate-x-1/2;
+    @apply text-lg text-primary-1 pt-3;
   }
 }
