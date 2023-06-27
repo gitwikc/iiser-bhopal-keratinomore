@@ -5,7 +5,21 @@
     @apply p-8;
 
     & > .description__content {
-      @apply flex flex-col justify-center gap-12 py-4;
+      @apply flex flex-col justify-center gap-12 py-4 mb-20;
+    }
+
+    & > .description__references ul.references {
+      @apply list-none grid grid-cols-2 gap-3;
+
+      li {
+        @apply p-4 hover:text-secondary rounded-md
+        border-2 border-l-[6px] border-slate-300 hover:border-secondary 
+        transition-all duration-200;
+
+        &.highlighted {
+          @apply bg-secondary text-light border-secondary shadow-none;
+        }
+      }
     }
   }
 }
