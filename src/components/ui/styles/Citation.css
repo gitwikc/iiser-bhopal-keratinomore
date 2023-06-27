@@ -1,0 +1,17 @@
+@import "/src/index.css";
+
+@layer components {
+  .Citation {
+    @apply relative inline px-1 border-b-[3px] border-b-primary-1
+    hover:border-transparent hover:bg-primary-1 hover:text-light
+    rounded-none hover:rounded
+    transition-all duration-200;
+  }
+}
+
+/* .Citation::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: theme("colors.primary-1");
+} */
