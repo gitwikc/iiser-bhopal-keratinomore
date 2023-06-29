@@ -18,7 +18,10 @@ const Reference: React.FC<ReferenceProps> = ({ refNumber, href, children }) => {
         if (index === refNumber) resetHighlight();
       }}
     >
-      <Link to={`${href || `#ref__${refNumber}`}`}>{children}</Link>
+      <Link to={`${href || `#ref__${refNumber}`}`}>
+        <sup>[{refNumber}]</sup>
+        {children}
+      </Link>
     </div>
   );
 };

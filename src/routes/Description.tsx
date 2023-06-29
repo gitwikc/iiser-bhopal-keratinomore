@@ -265,7 +265,7 @@ const Description = () => {
                 }
               />
               <Paragraph
-                title="Collaborative Stakeholder Management"
+                title="Collaborative Stakeholder Engagement"
                 hierarchy={1}
                 content={
                   <>

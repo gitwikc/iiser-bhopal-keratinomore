@@ -12,12 +12,20 @@
       @apply list-none grid grid-cols-2 gap-3;
 
       li {
-        @apply p-4 hover:text-secondary rounded-md
-        border-2 border-l-[6px] border-slate-300 hover:border-secondary 
+        @apply p-4 hover:text-primary-2 rounded-md
+        border-2 border-l-[6px] border-slate-300 hover:border-primary-2 
         transition-all duration-200;
 
+        sup {
+          @apply text-primary-1 mr-2;
+        }
+
         &.highlighted {
-          @apply bg-secondary text-light border-secondary shadow-none;
+          @apply bg-primary-2 text-light border-primary-2 shadow-none;
+
+          sup {
+            @apply text-white;
+          }
         }
       }
     }
