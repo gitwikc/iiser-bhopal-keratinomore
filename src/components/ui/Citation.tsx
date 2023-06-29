@@ -22,6 +22,7 @@ const Citation: React.FC<CitationProps> = ({
         onClick={() => highlightIndex(citeNumber)}
       >
         {children}
+        <sup>[{citeNumber}]</sup>
       </Link>
     </div>
   );
