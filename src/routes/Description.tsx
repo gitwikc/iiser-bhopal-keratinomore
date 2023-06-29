@@ -11,7 +11,7 @@ const Description = () => {
 
   return (
     <div className="Description">
-      <div className="text-5xl font-serif font-bold text-secondary text-center">
+      <div className="text-5xl font-serif font-extrabold text-primary-1 text-center">
         Description
       </div>
 
