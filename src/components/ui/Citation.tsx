@@ -22,7 +22,7 @@ const Citation: React.FC<CitationProps> = ({
         onClick={() => highlightIndex(citeNumber)}
       >
         {children}
-        <sup>[{citeNumber}]</sup>
+        <sup>[{citeNumber + 1}]</sup>
       </Link>
     </div>
   );

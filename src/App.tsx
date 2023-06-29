@@ -22,6 +22,7 @@ const App = () => {
       if (element) {
         console.log(`Scrolling to #${location.hash}`);
         element.scrollIntoView();
+        window.scrollBy({ top: -window.innerHeight * 0.35 });
       } else {
         window.scrollTo(0, 0);
       }

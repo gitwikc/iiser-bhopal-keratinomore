@@ -1,9 +1,18 @@
+import * as React from "react";
 import { NavLink } from "react-router-dom";
 import "./styles/Navbar.css";
 
 const Navbar = () => {
+  const [top, setTop] = React.useState(true);
+
+  React.useEffect(() => {
+    window.onscroll = () => {
+      setTop(window.scrollY < 1);
+    };
+  }, []);
+
   return (
-    <nav className="Navbar">
+    <nav className={`Navbar ${!top && "glass"}`}>
       <ul>
         <li className="text-secondary">
           <NavLink to="/">KeratiNoMore</NavLink>

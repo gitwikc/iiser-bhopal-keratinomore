@@ -19,7 +19,7 @@ const Reference: React.FC<ReferenceProps> = ({ refNumber, href, children }) => {
       }}
     >
       <Link to={`${href || `#ref__${refNumber}`}`}>
-        <sup>[{refNumber}]</sup>
+        <sup>[{refNumber + 1}]</sup>
         {children}
       </Link>
     </div>
