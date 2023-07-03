@@ -1,3 +1,4 @@
+import * as React from "react";
 import Paragraph from "../components/layout/Paragraph";
 import Citation from "../components/ui/Citation";
 import Reference from "../components/ui/Reference";

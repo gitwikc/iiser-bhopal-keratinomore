@@ -16,15 +16,20 @@ const Citation: React.FC<CitationProps> = ({
   const { highlightIndex } = useHighlightRefStore();
 
   return (
-    <div id={`cite__${citeNumber}`} className="Citation">
-      <Link
-        to={`#ref__${citeNumber}`}
-        onClick={() => highlightIndex(citeNumber)}
+    <span id={`cite__${citeNumber}`} className="Citation">
+      <span
+        onClick={() => {
+          highlightIndex(citeNumber);
+          const refSelector = `#ref__${citeNumber}`;
+          document
+            .querySelector(refSelector)
+            ?.scrollIntoView({ block: "center", behavior: "smooth" });
+        }}
       >
         {children}
         <sup>[{citeNumber + 1}]</sup>
-      </Link>
-    </div>
+      </span>
+    </span>
   );
 };
 

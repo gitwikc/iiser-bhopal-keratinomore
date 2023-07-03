@@ -11,6 +11,7 @@ import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
 import HomeNav from "./components/layout/HomeNav";
 import { useEffect } from "react";
+import BackToTopButton from "./components/ui/BackToTopButton";
 
 const App = () => {
   const location = useLocation();
@@ -22,7 +23,10 @@ const App = () => {
       if (element) {
         console.log(`Scrolling to #${location.hash}`);
         element.scrollIntoView();
-        window.scrollBy({ top: -window.innerHeight * 0.35 });
+        window.scrollBy({
+          top: -window.innerHeight * 0.35,
+          behavior: "smooth",
+        });
       } else {
         window.scrollTo(0, 0);
       }
@@ -31,6 +35,7 @@ const App = () => {
 
   return (
     <>
+      <BackToTopButton />
       <Routes>
         <Route path="/" element={<HomeNav />} />
         <Route path="*" element={<Navbar />} />
