@@ -56,6 +56,7 @@ const App = () => {
         <Route path="/education" element={<Education />} />
         <Route path="/model" element={<Model />} />
 
+        {/* 404 */}
         <Route path="/error" element={<Error />} />
       </Routes>
     </>
