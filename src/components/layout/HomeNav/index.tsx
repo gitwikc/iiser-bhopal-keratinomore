@@ -36,7 +36,7 @@ const HomeNav: React.FC = () => {
         </li>
         <li className="group">
           <Nav
-            to="/human-practice"
+            to="/human-practices"
             icon={<BsPersonHeart />}
             text="Human Practices"
           />
