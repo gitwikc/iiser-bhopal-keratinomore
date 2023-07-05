@@ -10,7 +10,7 @@
   }
 
   .Home > .brand .content {
-    @apply p-24 pt-32 flex flex-col gap-0 text-[8rem] font-serif font-black
+    @apply -mt-32 px-24 flex flex-col gap-0 text-[8rem] font-serif font-black
     cursor-pointer
     duration-500 hover:scale-[1.02];
   }
