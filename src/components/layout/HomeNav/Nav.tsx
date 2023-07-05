@@ -1,5 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
+import { motion, Variants } from "framer-motion";
 
 type NavProps = {
   to: string;
@@ -7,17 +8,38 @@ type NavProps = {
   text: string;
 };
 
+const contentVariants: Variants = {
+  normal: { opacity: 0.6 },
+  hovered: { opacity: 1 },
+};
+
+const textVariants: Variants = {
+  normal: { opacity: 0, y: 5, height: 0 },
+  hovered: { opacity: 1, y: 0, height: "auto" },
+};
+
+const DURATION = 0.25;
+
 const Nav: React.FC<NavProps> = ({ icon, text, to }: NavProps) => {
   return (
     <NavLink className="Nav" to={to}>
-      <div className="group">
-        <i className="icon">{icon}</i>
-        <div className="text">
-          <span className="opacity-0 duration-300 group-hover:opacity-100">
-            {text}
-          </span>
-        </div>
-      </div>
+      <motion.div
+        variants={contentVariants}
+        initial="normal"
+        whileHover="hovered"
+        transition={{
+          duration: DURATION,
+        }}
+        className="nav__content"
+      >
+        <motion.i>{icon}</motion.i>
+        <motion.span
+          variants={textVariants}
+          transition={{ duration: DURATION }}
+        >
+          {text}
+        </motion.span>
+      </motion.div>
     </NavLink>
   );
 };

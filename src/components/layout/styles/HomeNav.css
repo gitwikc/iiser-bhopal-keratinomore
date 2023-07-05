@@ -1,25 +1,29 @@
 @import "/src/index.css";
 
 @layer components {
-  .HomeNav {
-    @apply w-full pt-4 flex justify-center items-center absolute top-0;
-  }
+  nav.HomeNav {
+    @apply relative grid place-items-center;
 
-  .HomeNav > ul {
-    @apply list-none flex-grow flex justify-evenly items-center;
-  }
+    ul.nav__links {
+      @apply w-full py-6 flex justify-around items-center;
 
-  .HomeNav > ul > li {
-    @apply relative transition-all duration-500
-    flex flex-col items-center gap-2 p-6 opacity-30
-    text-dark hover:text-primary-1 hover:opacity-100;
-  }
+      li.nav__link {
+        @apply flex justify-center items-center rounded
+        w-16 h-16;
 
-  .HomeNav > ul > li i.icon {
-    @apply flex justify-center text-2xl;
-  }
+        .Nav {
+          @apply flex items-center justify-center;
 
-  .HomeNav > ul > li .text {
-    @apply text-lg text-primary-1 pt-3;
+          .nav__content {
+            @apply flex flex-col gap-2 items-center justify-center
+            text-primary-1 saturate-0 hover:saturate-100;
+
+            span {
+              @apply text-sm text-center;
+            }
+          }
+        }
+      }
+    }
   }
 }
