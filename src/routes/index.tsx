@@ -1,16 +1,16 @@
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./styles/index.css";
 
-const leftVariant: Variants = {
-  hidden: { opacity: 0, x: 30 },
-  show: { opacity: 1, x: 0 },
-};
+// const leftVariant: Variants = {
+//   hidden: { opacity: 0, x: 30 },
+//   show: { opacity: 1, x: 0 },
+// };
 
-const rightVariant: Variants = {
-  hidden: { opacity: 0, x: -30 },
-  show: { opacity: 1, x: 0 },
-};
+// const rightVariant: Variants = {
+//   hidden: { opacity: 0, x: -30 },
+//   show: { opacity: 1, x: 0 },
+// };
 
 const Home = () => {
   return (
