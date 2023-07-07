@@ -33,10 +33,7 @@ const Nav: React.FC<NavProps> = ({ icon, text, to }: NavProps) => {
         className="nav__content"
       >
         <motion.i>{icon}</motion.i>
-        <motion.span
-          variants={textVariants}
-          transition={{ duration: DURATION }}
-        >
+        <motion.span variants={textVariants} transition={{ duration: DURATION }}>
           {text}
         </motion.span>
       </motion.div>

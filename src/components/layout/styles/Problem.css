@@ -1,0 +1,31 @@
+@import "/src/index.css";
+
+@layer components {
+  .Problem {
+    @apply relative w-full h-screen flex justify-center items-center overflow-hidden;
+
+    .gauze {
+      @apply z-10 absolute top-0 left-0 w-full h-full backdrop-blur-[8rem];
+    }
+
+    .blob {
+      @apply absolute z-0 top-11 left-28 w-[192px] h-[192px] rounded-full;
+    }
+
+    .container {
+      @apply z-10 flex justify-evenly items-center;
+
+      & > * {
+        @apply flex justify-center items-center font-semibold;
+      }
+
+      .graphic {
+        @apply flex-1;
+      }
+
+      .content {
+        @apply flex-[2] text-6xl;
+      }
+    }
+  }
+}
