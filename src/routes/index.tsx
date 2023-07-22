@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 import "./styles/index.css";
 import Problem, { ProblemLayout } from "../components/layout/Problem";
 import { ColorName } from "../data/colors";
-import { MdFormatColorFill, MdOutlineWash, MdWash } from "react-icons/md";
-import { LuMilk } from "react-icons/lu";
-import { GiClothes } from "react-icons/gi";
-import { FaHandSparkles, FaPeopleArrows } from "react-icons/fa";
-import { RiEmotionLaughFill } from "react-icons/ri";
+import { MdOutlineWash, MdWash } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -34,52 +30,13 @@ const Home = () => {
         color={ColorName.PRIMARY1}
         layout={ProblemLayout.GRAPHIC_RIGHT}
         graphic={<MdWash size={192} />}
-        content={<>Washing powder Nirma</>}
+        content={<>Hold your chickens...</>}
       />
       <Problem
         color={ColorName.SECONDARY}
         layout={ProblemLayout.GRAPHIC_LEFT}
         graphic={<MdOutlineWash size={192} />}
-        content={<>Washing powder Nirma</>}
-      />
-
-      <Problem
-        color={ColorName.PRIMARY2}
-        layout={ProblemLayout.GRAPHIC_RIGHT}
-        graphic={<LuMilk size={192} />}
-        content={<>Doodh si safedi</>}
-      />
-      <Problem
-        color={ColorName.SECONDARY}
-        layout={ProblemLayout.GRAPHIC_LEFT}
-        graphic={<GiClothes size={192} />}
-        content={<>Nirma se aaye</>}
-      />
-
-      <Problem
-        color={ColorName.PRIMARY1}
-        layout={ProblemLayout.GRAPHIC_RIGHT}
-        graphic={<MdFormatColorFill size={192} />}
-        content={<>Rangeen kapde bhi</>}
-      />
-      <Problem
-        color={ColorName.SECONDARY}
-        layout={ProblemLayout.GRAPHIC_LEFT}
-        graphic={<FaHandSparkles size={192} />}
-        content={<>Khil khil Jaaye</>}
-      />
-
-      <Problem
-        color={ColorName.PRIMARY2}
-        layout={ProblemLayout.GRAPHIC_RIGHT}
-        graphic={<FaPeopleArrows size={192} />}
-        content={<>Sabki pasand Nirma...</>}
-      />
-      <Problem
-        color={ColorName.SECONDARY}
-        layout={ProblemLayout.GRAPHIC_LEFT}
-        graphic={<RiEmotionLaughFill size={192} />}
-        content={<>NIRMA</>}
+        content={<>Coming Soon</>}
       />
     </div>
   );
