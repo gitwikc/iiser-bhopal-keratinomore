@@ -4,7 +4,7 @@ import { BsFillShareFill, BsPersonHeart } from "react-icons/bs";
 import { FaDna } from "react-icons/fa";
 import { MdDescription } from "react-icons/md";
 import { RiHandCoinFill } from "react-icons/ri";
-import "../styles/HomeNav.css";
+import "./index.css";
 import Nav from "./Nav";
 
 const ulVariants: Variants = {

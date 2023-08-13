@@ -12,8 +12,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`Navbar ${!top && "glass"}`}>
-      <ul>
+    <nav className="Navbar">
+      <ul className={`${!top && "glass"}`}>
         <li className="text-secondary">
           <NavLink to="/">KeratiNoMore</NavLink>
         </li>

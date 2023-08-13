@@ -1,0 +1,30 @@
+@import "/src/index.css";
+
+@layer components {
+  .HeroSection {
+    @apply h-screen w-full p-0 m-0 mb-8 grid place-items-center;
+
+    .container {
+      @apply grid place-items-center gap-4 text-light pb-7;
+
+      .title {
+        @apply font-serif font-bold text-7xl cursor-pointer;
+      }
+
+      .desc {
+        @apply font-sans font-light text-2xl;
+      }
+    }
+
+    .credit {
+      @apply absolute right-0 opacity-40 text-sm text-white origin-bottom -rotate-90 translate-x-[50%]
+      hover:opacity-70 transition-all duration-150;
+    }
+  }
+}
+
+.HeroSection {
+  .container > .title {
+    letter-spacing: -3%;
+  }
+}

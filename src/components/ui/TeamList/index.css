@@ -1,0 +1,7 @@
+@import "/src/index.css";
+
+@layer components {
+  .TeamList {
+    @apply flex flex-col gap-5 px-8;
+  }
+}

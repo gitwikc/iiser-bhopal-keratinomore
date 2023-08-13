@@ -7,21 +7,23 @@
     nor these styles.
   */
   nav {
-    @apply sticky top-0 w-full z-50;
+    @apply fixed w-[100vw] flex justify-center top-0 z-50;
   }
 
   nav.Navbar {
-    @apply grid place-items-center py-4 px-2 bg-dark text-light
-    transition-all duration-500 shadow-sm;
-
-    &.glass {
-      @apply bg-opacity-75 backdrop-blur-md shadow-xl
-      hover:bg-opacity-100;
-    }
+    @apply text-light
+    transition-all duration-500;
   }
 
   nav.Navbar > ul {
-    @apply flex items-center justify-around gap-4;
+    @apply w-[100vw] flex items-center justify-around gap-4
+     bg-dark transition-all duration-300
+     px-6 py-4 mt-0 rounded-none;
+
+    &.glass {
+      @apply bg-opacity-60 backdrop-blur-md
+      hover:bg-opacity-100 w-[90vw] rounded-md mt-2;
+    }
   }
 
   nav.Navbar > ul > li > a.active {
