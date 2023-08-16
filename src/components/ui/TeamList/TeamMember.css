@@ -8,25 +8,19 @@
       @apply flex-row-reverse;
     }
 
-    .profile {
-      @apply p-[2px] aspect-square flex-1 rounded-full flex justify-center items-center
-        bg-gradient-to-br from-primary-1 via-primary-2 to-secondary
-        bg-clip-border;
-
-      img {
-        @apply w-[90%] rounded-full;
-      }
+    .ProfileImage {
+      @apply flex-1 rounded-lg overflow-hidden;
     }
 
-    .content {
-      @apply flex flex-col flex-[3];
+    .ProfileContent {
+      @apply flex flex-col gap-1 flex-[3];
 
-      .name {
-        @apply font-serif font-bold text-3xl text-primary-1 mb-1;
-      }
+      .content__info {
+        @apply grid grid-cols-3 gap-y-1 place-items-start text-lg font-semibold mb-3;
 
-      .info {
-        @apply grid grid-cols-3 place-items-start text-lg font-semibold mb-3;
+        .name {
+          @apply col-span-3 font-serif font-bold text-3xl text-primary-1 mb-1;
+        }
 
         .department {
           @apply bg-violet-200 text-primary-1 rounded-sm px-1;
@@ -41,8 +35,8 @@
         }
       }
 
-      .bio {
-        @apply text-lg text-dark font-light;
+      .content__bio {
+        @apply text-slate-700;
       }
     }
   }

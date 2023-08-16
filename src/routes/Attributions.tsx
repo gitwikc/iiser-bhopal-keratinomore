@@ -1,8 +1,7 @@
 import HeroSection from "../components/layout/HeroSection";
 import TeamList from "../components/ui/TeamList";
-import TeamMember from "../components/ui/TeamList/TeamMember";
 import AttributionsBackground from "/hero-bg/attributions.jpg";
-import Sattwik from "/members/sattwik.png";
+import MemberPic from "/members/guy.jpg";
 
 const Attributions = () => (
   <div className="Attributions">
@@ -27,10 +26,10 @@ const Attributions = () => (
     <main>
       <TeamList
         members={Array(12).fill({
-          name: "Sattwik Sahu",
-          bio: "Our web developer who's incidentally not a spider. He loves Spider-Man though.",
+          name: "Lorem Ipsum",
+          bio: "College student, iGEM web dev. Blending biology and code for innovative solutions. Passionate about tech, genetics, and teamwork.",
           department: "Web Dev",
-          imageURL: Sattwik,
+          imageURL: MemberPic,
           major: "EECS",
           year: 3,
         })}

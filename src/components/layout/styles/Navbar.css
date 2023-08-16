@@ -7,7 +7,7 @@
     nor these styles.
   */
   nav {
-    @apply fixed w-[100vw] flex justify-center top-0 z-50;
+    @apply fixed w-[100vw] flex justify-center top-0 z-[999];
   }
 
   nav.Navbar {
@@ -17,12 +17,12 @@
 
   nav.Navbar > ul {
     @apply w-[100vw] flex items-center justify-around gap-4
-     bg-dark transition-all duration-300
+     bg-dark shadow-lg transition-all duration-300
      px-6 py-4 mt-0 rounded-none;
 
     &.glass {
       @apply bg-opacity-60 backdrop-blur-md
-      hover:bg-opacity-100 w-[90vw] rounded-md mt-2;
+      hover:bg-opacity-80 w-[90vw] rounded-md mt-2;
     }
   }
 

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { PALETTE, ColorName, PALLETE } from "./src/data/colors";
+
 export default {
   content: ["./index.html", "./src/**/*.{jsx, jsx,tsx,ts}"],
   theme: {

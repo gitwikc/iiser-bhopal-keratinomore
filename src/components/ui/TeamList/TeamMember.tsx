@@ -1,5 +1,9 @@
 import * as React from "react";
 import "./TeamMember.css";
+import ProfileImage from "./ProfileImage";
+
+import "./TeamMember.css";
+import ProfileContent from "./ProfileContent";
 
 export type TeamMemberProps = {
   name: string;
@@ -22,18 +26,17 @@ const TeamMember: React.FC<TeamMemberProps> = ({
 }) => {
   return (
     <div className={`TeamMember ${invertAlign && "invert_align"}`}>
-      <div className="profile">
-        <img src={imageURL} alt={name} />
-      </div>
-      <div className="content">
-        <div className="name">{name}</div>
-        <div className="info">
-          <span className="department">{department}</span>
-          <span className="year">Year {year}</span>
-          <span className="major">{major}</span>
-        </div>
-        <div className="bio">{bio}</div>
-      </div>
+      <ProfileImage
+        {...{ name, imageURL, invertAlign: invertAlign || false }}
+      />
+      <ProfileContent
+        name={name}
+        department={department}
+        major={major}
+        year={year}
+        bio={bio}
+        invertAlign={invertAlign || false}
+      />
     </div>
   );
 };

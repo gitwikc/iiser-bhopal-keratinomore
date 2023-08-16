@@ -8,7 +8,7 @@
       @apply grid place-items-center gap-4 text-light pb-7;
 
       .title {
-        @apply font-serif font-bold text-7xl cursor-pointer;
+        @apply font-serif font-bold text-3xl md:text-5xl lg:text-7xl cursor-pointer;
       }
 
       .desc {
