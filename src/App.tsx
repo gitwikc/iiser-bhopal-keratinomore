@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from "./routes";
 import Error from "./routes/Error";
 import Attributions from "./routes/Attributions";
@@ -9,11 +9,38 @@ import HumanPractices from "./routes/HumanPractices";
 import Education from "./routes/specialPrize/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
+import HomeNav from "./components/layout/HomeNav";
+import { useEffect } from "react";
+import BackToTopButton from "./components/ui/BackToTopButton";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location);
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        console.log(`Scrolling to #${location.hash}`);
+        element.scrollIntoView();
+        window.scrollBy({
+          top: -window.innerHeight * 0.35,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo(0, 0);
+      }
+    }
+  }, [location]);
+
   return (
     <>
-      <Navbar />
+      <BackToTopButton />
+      <Routes>
+        <Route path="/" element={<HomeNav />} />
+        <Route path="*" element={<Navbar />} />
+      </Routes>
+      {/* <Navbar /> */}
       <Routes>
         <Route path="*" element={<Navigate to="/error" replace />} />
         <Route path="/" element={<Home />} />
@@ -29,6 +56,7 @@ const App = () => {
         <Route path="/education" element={<Education />} />
         <Route path="/model" element={<Model />} />
 
+        {/* 404 */}
         <Route path="/error" element={<Error />} />
       </Routes>
     </>
