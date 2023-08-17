@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import "./styles/index.css";
+import "./index.css";
 import Problem, { ProblemLayout } from "../components/layout/Problem";
 import { ColorName } from "../data/colors";
 import { GiChicken, GiSandsOfTime } from "react-icons/gi";

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import "./styles/HeroSection.css";
+import "./HeroSection.css";
 import { ColorName, PALLETE } from "../../data/colors";
 import Wave from "react-wavify";
 

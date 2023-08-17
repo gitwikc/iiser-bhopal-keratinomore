@@ -2,7 +2,7 @@ import * as React from "react";
 import { ColorName, PALLETE } from "../../data/colors";
 import { motion, Variants } from "framer-motion";
 
-import "./styles/Problem.css";
+import "./Problem.css";
 import mousePosStore, { MousePos } from "../../data/mousePosStore";
 
 export enum ProblemLayout {

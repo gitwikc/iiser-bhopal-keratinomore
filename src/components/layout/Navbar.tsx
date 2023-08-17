@@ -1,13 +1,9 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import "./styles/Navbar.css";
+import "./Navbar.css";
 import { BsFillShareFill, BsGearFill, BsPersonHeart } from "react-icons/bs";
 import { FaDna } from "react-icons/fa";
-import {
-  MdCastForEducation,
-  MdDescription,
-  MdEditSquare,
-} from "react-icons/md";
+import { MdDescription, MdEditSquare } from "react-icons/md";
 import { RiHandCoinFill } from "react-icons/ri";
 
 const Navbar = () => {
