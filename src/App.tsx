@@ -9,6 +9,7 @@ import HumanPractices from "./routes/humanPractices/HumanPractices";
 import Education from "./routes/humanPractices/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import HomeNav from "./components/layout/HomeNav";
 import { useEffect } from "react";
 import BackToTopButton from "./components/ui/BackToTopButton";
@@ -58,6 +59,9 @@ const App = () => {
 
         {/* 404 */}
         <Route path="/error" element={<Error />} />
+      </Routes>
+      <Routes>
+        <Route path="*" element={<Footer/>}/>
       </Routes>
     </>
   );
