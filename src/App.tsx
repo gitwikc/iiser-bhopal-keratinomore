@@ -1,12 +1,12 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Home from "./routes";
 import Error from "./routes/Error";
-import Attributions from "./routes/Attributions";
+import Attributions from "./routes/team/Attributions";
 import Contribution from "./routes/Contribution";
-import Description from "./routes/Description";
-import Engineering from "./routes/Engineering";
-import HumanPractices from "./routes/HumanPractices";
-import Education from "./routes/specialPrize/Education";
+import Description from "./routes/project/Description";
+import Engineering from "./routes/project/Engineering";
+import HumanPractices from "./routes/humanPractices/HumanPractices";
+import Education from "./routes/humanPractices/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";

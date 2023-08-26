@@ -1,11 +1,9 @@
-body {
-  background: #fbfbfd;
-}
+@import "/src/index.css";
+
 .grid {
   max-width: 80vw;
   margin: 0 auto;
   padding: 30px 0;
-
 }
 
 .grid__item {
@@ -29,11 +27,10 @@ hr {
   width: 100%;
   height: 0.4em;
   border: 0;
-  background: url("../assets/images/divider.svg")
-    center/5em 100% repeat-x;
+  background: url("./assets/images/divider.svg") center/5em 100% repeat-x;
 }
 
-.footer-copyright-info{
+.footer-copyright-info {
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -48,7 +45,7 @@ hr {
   color: #7f88a6;
   padding-left: 30px;
 }
-.gitlab-repository{
+.gitlab-repository {
   text-align: left;
   font-size: 12px;
   font-weight: 300;
@@ -56,7 +53,7 @@ hr {
   padding-left: 30px;
   padding-bottom: 20px;
 }
-.gitlab-repository a:hover{
+.gitlab-repository a:hover {
   text-decoration: underline;
 }
 .cc-license a:hover {
@@ -66,7 +63,7 @@ hr {
   text-decoration: underline;
 }
 .new_footer_area {
-  background: #fbfbfd;
+  background: theme("colors.light");
 }
 .row {
   display: flex;
@@ -104,12 +101,12 @@ hr {
 }
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced;
+  color: theme("colors.primary-2");
 }
 .btn_get:hover {
   color: #fff;
-  background: #6754e2;
-  border-color: #6754e2;
+  background: theme("colors.primary-1");
+  border-color: theme("colors.primary-1");
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -124,7 +121,7 @@ button:focus {
 }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-  color: #5e2ced;
+  color: theme("colors.primary-2");
 }
 .new_footer_top .f_widget.about-widget .f_list li {
   margin-bottom: 11px;
@@ -176,19 +173,19 @@ button:focus {
 .btn_get_two {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: theme("colors.primary-2");
+  border-color: theme("colors.primary-2");
   color: #fff;
 }
 
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced;
+  color: theme("colors.primary-2");
 }
 
 .new_footer_top .f_social_icon a:hover {
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: theme("colors.primary-2");
+  border-color: theme("colors.primary-2");
   color: white;
 }
 .new_footer_top .f_social_icon a + a {
@@ -219,15 +216,13 @@ h6 {
 .new_footer_top .footer_bg {
   position: absolute;
   bottom: 0;
-  background: url("../assets/images/footer_bg.png")
-    no-repeat scroll center 0;
+  background: url("./assets/images/footer_bg.png") no-repeat scroll center 0;
   width: 100%;
   height: 266px;
 }
 
 .new_footer_top .footer_bg .footer_bg_one {
-  background: url("../assets/images/volks.gif")
-    no-repeat center center;
+  background: url("./assets/images/volks.gif") no-repeat center center;
   width: 330px;
   height: 105px;
   background-size: 100%;
@@ -239,8 +234,7 @@ h6 {
 }
 
 .new_footer_top .footer_bg .footer_bg_two {
-  background: url("../assets/images/cyclist.gif")
-    no-repeat center center;
+  background: url("./assets/images/cyclist.gif") no-repeat center center;
   width: 88px;
   height: 100px;
   background-size: 100%;

@@ -1,9 +1,9 @@
-import HeroSection from "../components/layout/HeroSection";
-import Paragraph from "../components/layout/Paragraph";
-import Citation from "../components/ui/Citation";
-import Reference from "../components/ui/Reference";
-import { referencesList, useHighlightRefStore } from "../data/References";
-import "./styles/Description.css";
+import HeroSection from "../../components/layout/HeroSection";
+import Paragraph from "../../components/layout/Paragraph";
+import Citation from "../../components/ui/Citation";
+import Reference from "../../components/ui/Reference";
+import { referencesList, useHighlightRefStore } from "../../data/References";
+import "./Description.css";
 import DescriptionBackground from "/hero-bg/description.jpg";
 
 const Description = () => {

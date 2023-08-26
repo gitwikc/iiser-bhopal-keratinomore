@@ -2,7 +2,7 @@ import * as React from "react";
 import { FiArrowUp } from "react-icons/fi";
 import { motion, useAnimation } from "framer-motion";
 
-import "./styles/BackToTopButton.css";
+import "./BackToTopButton.css";
 
 function BackToTopButton() {
   const [showButton, setShowButton] = React.useState(false);
