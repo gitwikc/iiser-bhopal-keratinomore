@@ -1,0 +1,9 @@
+@import "/src/index.css";
+
+@layer components {
+  .Engineering {
+    main {
+      @apply w-screen flex flex-col gap-4 items-center;
+    }
+  }
+}

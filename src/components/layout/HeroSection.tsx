@@ -63,7 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         paused={false}
         options={{
           height: 20,
-          amplitude: 40,
+          amplitude: 20,
           speed: 0.2,
           points: 6,
         }}
@@ -73,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         paused={false}
         options={{
           height: 30,
-          amplitude: 50,
+          amplitude: 20,
           speed: 0.25,
           points: 5,
         }}
@@ -82,7 +82,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         className="absolute bottom-0 opacity-30"
         paused={false}
         options={{
-          height: 30,
+          height: 20,
           amplitude: 60,
           speed: 0.15,
           points: 3,
