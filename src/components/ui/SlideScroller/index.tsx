@@ -1,5 +1,6 @@
 import * as React from "react";
 import SlideUpdatePanel from "./SlideUpdatePanel";
+import { motion, AnimatePresence } from "framer-motion";
 
 import "./index.css";
 import { MdModeOfTravel } from "react-icons/md";
@@ -52,19 +53,31 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
 
   return (
     <div className={`SlideScroller ${currentSlide === 0 ? "cover" : "slides"}`}>
-      <div className={`title ${currentSlide === 0 ? "large" : "small"}`}>
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
+        className={`title ${currentSlide === 0 ? "large" : "small"}`}
+      >
         {title}
-      </div>
-      {currentSlide === 0 && (
-        <div className="btn__start">
-          <button onClick={nextSlide}>
-            <span>
-              <MdModeOfTravel size={36} />
-            </span>
-            <span>Relive the Journey</span>
-          </button>
-        </div>
-      )}
+      </motion.div>
+      <AnimatePresence initial={false}>
+        {currentSlide === 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
+            whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
+            exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+            className="btn__start"
+          >
+            <button onClick={nextSlide}>
+              <span>
+                <MdModeOfTravel size={36} />
+              </span>
+              <span>Relive the Journey</span>
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
       {currentSlide > 0 && (
         <>
           {slides[currentSlide - 1]}
