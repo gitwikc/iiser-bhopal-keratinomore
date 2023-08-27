@@ -15,27 +15,26 @@
     }
 
     & > .title {
-      @apply absolute font-serif font-bold
+      @apply absolute font-serif font-bold z-[800]
       transition-all duration-200  p-3 text-white;
 
       &.large {
-        @apply text-5xl top-[30%];
+        @apply text-5xl top-[30%] shadow-none;
       }
 
       &.small {
-        @apply text-2xl top-0 bg-primary-1 text-white rounded-b-md;
+        @apply text-2xl top-0 bg-primary-1 text-white rounded-b-md shadow-md;
       }
     }
 
     & > .btn__start > button {
       @apply px-4 py-3 min-w-[5rem] border-none rounded-md text-primary-1
       flex justify-center items-center gap-2
-        bg-white font-semibold hover:scale-125
-        transition-all duration-200;
+        bg-white font-semibold;
     }
 
     .SlideUpdatePanel {
-      @apply absolute p-2 mb-3 bottom-0 bg-slate-800
+      @apply absolute p-2 mb-5 bottom-0 bg-slate-800
       rounded-md flex justify-evenly items-center w-1/5
       bg-opacity-40 backdrop-blur hover:bg-opacity-60
       transition-all duration-200;
@@ -45,12 +44,21 @@
       }
 
       .info {
-        @apply w-3/5 text-white font-mono text-center;
+        @apply w-3/5 text-white font-mono text-center
+        flex justify-around gap-1;
+
+        & > * {
+          @apply relative overflow-hidden;
+        }
+
+        span.stage {
+          @apply capitalize flex flex-col;
+        }
       }
     }
 
     .Slide {
-      @apply p-4 pb-6 w-full h-full m-4 pt-16 flex flex-col items-center overflow-scroll;
+      @apply p-4 pb-12 w-full h-full m-8 mb-0 pt-16 flex flex-col items-center overflow-scroll;
 
       & > .info {
         @apply flex flex-col items-center gap-2;
@@ -76,10 +84,12 @@
   --accent: theme("colors.primary-1");
   --title-font-size: theme("fontSize.2xl");
 }
+
 .Paragraph[data-hierarchy="1"] {
   --accent: theme("colors.primary-2");
   --title-font-size: theme("fontSize.xl");
 }
+
 .Paragraph[data-hierarchy="2"] {
   --accent: theme("colors.secondary");
   --title-font-size: theme("fontSize.lg");

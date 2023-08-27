@@ -1,4 +1,5 @@
 import * as React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import SlideUpdateButton from "./SlideUpdateButton";
 
 type SlideUpdatePanelProps = {
@@ -15,17 +16,32 @@ const SlideUpdatePanel: React.FC<SlideUpdatePanelProps> = ({
   prevSlide,
   nextSlide,
 }) => {
-  // const cycle = Math.floor(currentSlide / 4);
-  // const stage = "Design Build Test Learn".split(" ")[currentSlide % 4];
-
   return (
     <div className="SlideUpdatePanel flex justify-between">
       {prevSlide && (
         <SlideUpdateButton slideUpdate="prev" action={() => prevSlide()} />
       )}
       <div className="info">
-        <span className="cycle">Cycle {currentSlide.cycle}</span>{" "}
-        <span className="stage">{currentSlide.stage}</span>
+        <AnimatePresence>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.2 } }}
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}
+            className="cycle"
+            key={currentSlide.cycle}
+          >
+            Cycle {currentSlide.cycle}
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.2 } }}
+            exit={{ opacity: 0, y: -20, transition: { duration: 0.2 } }}
+            className="stage"
+            key={currentSlide.stage}
+          >
+            {currentSlide.stage}
+          </motion.span>
+        </AnimatePresence>
       </div>
       {nextSlide && (
         <SlideUpdateButton slideUpdate="next" action={() => nextSlide()} />
