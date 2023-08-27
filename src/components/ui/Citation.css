@@ -1,0 +1,18 @@
+@import "/src/index.css";
+
+@layer components {
+  .Citation {
+    @apply relative inline px-1 border-b-[1.5px] border-b-primary-1
+    hover:border-transparent hover:bg-primary-1 hover:text-light
+    rounded-none hover:rounded cursor-pointer
+    transition-all duration-200;
+
+    & sup {
+      @apply text-primary-1;
+    }
+
+    &:hover sup {
+      @apply text-inherit;
+    }
+  }
+}
