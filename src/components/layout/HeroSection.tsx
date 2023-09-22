@@ -59,30 +59,33 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </motion.div>
 
       <Wave
-        className="absolute bottom-0 opacity-30"
+        fill={PALLETE[ColorName.LIGHT]}
+        className="absolute bottom-0 opacity-40"
         paused={false}
         options={{
           height: 20,
-          amplitude: 40,
+          amplitude: 20,
           speed: 0.2,
           points: 6,
         }}
       />
       <Wave
-        className="absolute bottom-0 opacity-30"
+        fill={PALLETE[ColorName.LIGHT]}
+        className="absolute bottom-0 opacity-50"
         paused={false}
         options={{
           height: 30,
-          amplitude: 50,
+          amplitude: 20,
           speed: 0.25,
           points: 5,
         }}
       />
       <Wave
-        className="absolute bottom-0 opacity-30"
+        fill={PALLETE[ColorName.LIGHT]}
+        className="absolute light bottom-0 opacity-100"
         paused={false}
         options={{
-          height: 30,
+          height: 20,
           amplitude: 60,
           speed: 0.15,
           points: 3,
