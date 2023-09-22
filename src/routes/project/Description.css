@@ -5,7 +5,11 @@
     @apply p-0;
 
     & > .description__content {
-      @apply flex flex-col justify-center gap-12 px-8 py-4 mb-20;
+      @apply flex flex-col justify-center gap-12 px-64 py-4 mb-20;
+    }
+
+    & > .description__references {
+      @apply px-64;
     }
 
     & > .description__references ul.references {

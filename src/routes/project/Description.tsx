@@ -44,9 +44,9 @@ const Description = () => {
                   <p>
                     Keratinous waste, particularly hair and feathers, poses a
                     significant challenge in terms of efficient and sustainable
-                    management. Keratin is one of the most abundant biopolymers.
-                    Its recalcitrant nature and limited existing solutions for
-                    its degradation complicate waste disposal.
+                    management. <b>Keratin</b> is one of the most abundant
+                    biopolymers. Its recalcitrant nature and limited existing
+                    solutions for its degradation complicate waste disposal.
                   </p>
                   <Paragraph
                     title="Feather Waste in the Poultry Industry"
