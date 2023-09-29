@@ -1,5 +1,10 @@
 @import "/src/index.css";
 
+.footerLogo {
+  height: 50px;
+  width: 50px;
+}
+
 .grid {
   max-width: 80vw;
   margin: 0 auto;
