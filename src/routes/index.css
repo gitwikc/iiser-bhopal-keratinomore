@@ -2,7 +2,7 @@
 
 @layer components {
   .Home {
-    @apply flex flex-col w-full min-h-screen;
+    @apply flex flex-col w-screen;
   }
 
   /* Brand text */
@@ -11,17 +11,16 @@
   }
 
   .Home > .brand .content {
-    @apply -mt-32 px-24 flex flex-col gap-0 text-[8rem] font-serif font-black
+    @apply -mt-32 px-24 flex flex-col gap-0 text-[9rem] font-serif font-black
     cursor-pointer
     duration-500 hover:scale-[1.02];
   }
 
   .Home .brand .content span {
-    @apply -m-10 p-0 text-transparent;
+    @apply -m-12 p-0 text-transparent;
   }
 
   /* Problem statement  */
-  
 }
 
 .Home > .brand .content {
@@ -40,6 +39,10 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 10s;
+
+  span {
+    letter-spacing: -4px;
+  }
 }
 
 @keyframes sideside {

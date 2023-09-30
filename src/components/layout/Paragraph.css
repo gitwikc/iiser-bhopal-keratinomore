@@ -18,7 +18,7 @@
       @apply mb-3;
     }
 
-    &[data-hierarchy="0"] {
+    /* &[data-hierarchy="0"] {
       @apply border-l-primary-1 border-opacity-20 hover:border-opacity-100;
     }
 
@@ -28,7 +28,7 @@
 
     &[data-hierarchy="2"] {
       @apply border-l-secondary border-opacity-20 hover:border-opacity-80;
-    }
+    } */
   }
 }
 

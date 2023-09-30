@@ -1,8 +1,10 @@
-import Paragraph from "../components/layout/Paragraph";
-import Citation from "../components/ui/Citation";
-import Reference from "../components/ui/Reference";
-import { referencesList, useHighlightRefStore } from "../data/References";
-import "./styles/Description.css";
+import HeroSection from "../../components/layout/HeroSection";
+import Paragraph from "../../components/layout/Paragraph";
+import Citation from "../../components/ui/Citation";
+import Reference from "../../components/ui/Reference";
+import { referencesList, useHighlightRefStore } from "../../data/References";
+import "./Description.css";
+import DescriptionBackground from "/hero-bg/description.jpg";
 
 const Description = () => {
   const isHighlighted = useHighlightRefStore(
@@ -11,9 +13,23 @@ const Description = () => {
 
   return (
     <div className="Description">
-      <div className="text-5xl font-serif font-extrabold text-primary-1 text-center">
-        Description
-      </div>
+      <HeroSection
+        imageURL={DescriptionBackground}
+        title="Description"
+        description="Get to know the project, its inspirations and goals."
+        imageCredit={
+          <>
+            Photo by{" "}
+            <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Alexander Sinn
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/photos/DX5r6BNoWVE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </>
+        }
+      />
 
       <div className="description__content">
         <Paragraph
@@ -28,9 +44,9 @@ const Description = () => {
                   <p>
                     Keratinous waste, particularly hair and feathers, poses a
                     significant challenge in terms of efficient and sustainable
-                    management. Keratin is one of the most abundant biopolymers.
-                    Its recalcitrant nature and limited existing solutions for
-                    its degradation complicate waste disposal.
+                    management. <b>Keratin</b> is one of the most abundant
+                    biopolymers. Its recalcitrant nature and limited existing
+                    solutions for its degradation complicate waste disposal.
                   </p>
                   <Paragraph
                     title="Feather Waste in the Poultry Industry"

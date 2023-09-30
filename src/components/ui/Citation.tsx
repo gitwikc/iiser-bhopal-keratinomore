@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./styles/Citation.css";
+import "./Citation.css";
 import { useHighlightRefStore } from "../../data/References";
 
 type CitationProps = {

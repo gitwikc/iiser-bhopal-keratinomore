@@ -2,10 +2,10 @@
 
 @layer components {
   nav.HomeNav {
-    @apply relative grid place-items-center;
+    @apply p-6 relative w-full flex items-center justify-evenly;
 
     ul.nav__links {
-      @apply w-full py-6 flex justify-around items-center;
+      @apply w-full flex justify-around items-center;
 
       li.nav__link {
         @apply flex justify-center items-center rounded

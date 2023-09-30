@@ -2,9 +2,9 @@
 
 @layer components {
   button.BackToTop {
-    @apply fixed bottom-0 right-0 p-3 m-4 rounded-full
+    @apply fixed bottom-0 right-0 p-3 rounded-full
             bg-primary-1 text-light shadow-md
-            opacity-0
+            opacity-0 z-[999]
             transition-all duration-200;
 
     &[data-visible="true"] {
