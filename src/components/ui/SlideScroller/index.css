@@ -78,6 +78,18 @@
       }
     }
   }
+
+  .CycleSelector ul {
+    @apply flex gap-2;
+
+    li > span {
+      @apply text-white cursor-pointer;
+
+      &.active {
+        @apply bg-secondary;
+      }
+    }
+  }
 }
 
 .Paragraph[data-hierarchy="0"] {

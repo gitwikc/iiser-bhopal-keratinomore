@@ -12,7 +12,7 @@ const Slide: React.FC<SlideProps> = ({ title, stage, cycle, children }) => {
   return (
     <div className="Slide">
       <div className="info">
-        <AnimatePresence>
+        <AnimatePresence key={`${stage}-${cycle}_${title}`}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
@@ -27,6 +27,7 @@ const Slide: React.FC<SlideProps> = ({ title, stage, cycle, children }) => {
             animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
             exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
             className="meta"
+            key={stage}
           >
             {stage} [Cycle {cycle}]
           </motion.div>

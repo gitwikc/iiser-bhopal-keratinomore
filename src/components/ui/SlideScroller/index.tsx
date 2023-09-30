@@ -18,7 +18,7 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
       cycle: number;
       stage: "design" | "build" | "test" | "learn";
     }[]
-  >();
+  >([]);
   const nextSlide = () => setCurrentSlide((c) => c + 1);
   const prevSlide = () => setCurrentSlide((c) => c - 1);
 
@@ -51,6 +51,10 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
     setSlidesInfo(a);
   }, []);
 
+  React.useEffect(() => {
+    console.log(`Current slide = ${currentSlide}`);
+  }, [currentSlide]);
+
   return (
     <div className={`SlideScroller ${currentSlide === 0 ? "cover" : "slides"}`}>
       <motion.div
@@ -60,7 +64,7 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
       >
         {title}
       </motion.div>
-      <AnimatePresence initial={false}>
+      <AnimatePresence initial={false} key={currentSlide}>
         {currentSlide === 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -68,6 +72,7 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
             whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
             exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
             className="btn__start"
+            key={currentSlide}
           >
             <button onClick={nextSlide}>
               <span>
@@ -87,6 +92,18 @@ const SlideScroller: React.FC<SlideScrollerProps> = ({ title, children }) => {
             nextSlide={
               currentSlide <= slidesInfo!.length - 1 ? nextSlide : undefined
             }
+            setCycle={(cycle: number) => {
+              // TODO Set the current cycle
+              setCurrentSlide(() => {
+                const i = slidesInfo.findIndex(
+                  (slide) => slide.cycle === cycle && slide.stage === "design"
+                );
+                console.log(i + 1);
+                return i + 1;
+              });
+            }}
+            // /TODO Calculate the max no of cycles
+            maxCycles={slides.length / 4}
           />
         </>
       )}
