@@ -45,14 +45,14 @@
 
       .info {
         @apply w-3/5 text-white font-mono text-center
-        flex justify-around gap-1;
+        flex justify-around items-center gap-1;
 
         & > * {
           @apply relative overflow-hidden;
         }
 
         span.stage {
-          @apply capitalize flex flex-col;
+          @apply capitalize flex flex-col px-3;
         }
       }
     }
