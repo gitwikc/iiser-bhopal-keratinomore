@@ -2,7 +2,6 @@ import HeroSection from "../../components/layout/HeroSection";
 import TeamList from "../../components/ui/TeamList";
 import AttributionsBackground from "/hero-bg/attributions.jpg";
 import MemberPic from "/members/guy.jpg";
-import Footer from '../components/layout/Footer.tsx';
 
 const Attributions = () => (
   <div className="Attributions">
@@ -24,7 +23,7 @@ const Attributions = () => (
       }
     />
 
-    <main>
+    <main className="px-64">
       <TeamList
         members={Array(12).fill({
           name: "Lorem Ipsum",
@@ -36,7 +35,7 @@ const Attributions = () => (
         })}
       />
     </main>
-    </div>
+  </div>
 );
 
 export default Attributions;

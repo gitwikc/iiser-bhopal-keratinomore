@@ -11,7 +11,7 @@
     }
 
     & > .content {
-      @apply font-medium text-dark;
+      @apply font-medium text-dark text-justify;
     }
 
     & p {

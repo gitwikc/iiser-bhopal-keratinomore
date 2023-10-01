@@ -8,7 +8,7 @@
             transition-all duration-200;
 
     &[data-visible="true"] {
-      @apply opacity-25 hover:opacity-100 hover:-translate-y-1;
+      @apply opacity-25 m-4 hover:opacity-100 hover:-translate-y-1;
     }
   }
 }

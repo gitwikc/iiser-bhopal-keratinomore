@@ -23,21 +23,21 @@ const SlideUpdatePanel: React.FC<SlideUpdatePanelProps> = ({
 }) => {
   return (
     <div className="SlideUpdatePanel flex flex-col">
-      <span className="flex justify-evenly">
+      <span className="flex justify-evenly mb-3">
         {prevSlide && (
           <SlideUpdateButton slideUpdate="prev" action={() => prevSlide()} />
         )}
         <div className="info">
           <AnimatePresence key={`${currentSlide.cycle}_${currentSlide.stage}`}>
-            <motion.span
+            {/* <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 0.2 } }}
               exit={{ opacity: 0, transition: { duration: 0.2 } }}
               className="cycle"
               key={currentSlide.cycle}
-            >
+              >
               Cycle {currentSlide.cycle}
-            </motion.span>
+            </motion.span> */}
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0, transition: { duration: 0.2 } }}
@@ -53,7 +53,10 @@ const SlideUpdatePanel: React.FC<SlideUpdatePanelProps> = ({
           <SlideUpdateButton slideUpdate="next" action={() => nextSlide()} />
         )}
       </span>
-      <span className="">
+      <span className="flex flex-col items-center rounded border-white border-2 p-2">
+        <span className="text-white" style={{ fontSize: "0.8rem" }}>
+          Cycle
+        </span>
         <CycleSelector
           currentCycle={currentSlide.cycle}
           maxCycles={maxCycles}

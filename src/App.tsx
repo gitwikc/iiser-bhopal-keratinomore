@@ -13,6 +13,7 @@ import Footer from "./components/layout/Footer";
 import HomeNav from "./components/layout/HomeNav";
 import { useEffect } from "react";
 import BackToTopButton from "./components/ui/BackToTopButton";
+import Sustainable from "./routes/humanPractices/Sustainable";
 
 const App = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ const App = () => {
         <Route path="/description" element={<Description />} />
         <Route path="/engineering" element={<Engineering />} />
         <Route path="/human-practices" element={<HumanPractices />} />
+        <Route path="/sustainable" element={<Sustainable />} />
 
         {/* Special Prizes */}
         <Route path="/education" element={<Education />} />
@@ -61,7 +63,7 @@ const App = () => {
         <Route path="/error" element={<Error />} />
       </Routes>
       <Routes>
-        <Route path="*" element={<Footer/>}/>
+        <Route path="*" element={<Footer />} />
       </Routes>
     </>
   );
