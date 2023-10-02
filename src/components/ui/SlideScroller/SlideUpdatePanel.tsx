@@ -22,8 +22,8 @@ const SlideUpdatePanel: React.FC<SlideUpdatePanelProps> = ({
   setCycle,
 }) => {
   return (
-    <div className="SlideUpdatePanel flex flex-col">
-      <span className="flex justify-evenly mb-3">
+    <div className="SlideUpdatePanel items-center">
+      <span className="flex justify-evenly">
         {prevSlide && (
           <SlideUpdateButton slideUpdate="prev" action={() => prevSlide()} />
         )}
@@ -49,11 +49,9 @@ const SlideUpdatePanel: React.FC<SlideUpdatePanelProps> = ({
             </motion.span>
           </AnimatePresence>
         </div>
-        {nextSlide && (
-          <SlideUpdateButton slideUpdate="next" action={() => nextSlide()} />
-        )}
+        <SlideUpdateButton slideUpdate="next" action={nextSlide || undefined} />
       </span>
-      <span className="flex flex-col items-center rounded border-white border-2 p-2">
+      <span className="flex gap-2 items-center rounded border-white border-opacity-20 border-[1px] p-2">
         <span className="text-white" style={{ fontSize: "0.8rem" }}>
           Cycle
         </span>

@@ -3,7 +3,7 @@
 @layer components {
   .Sustainable {
     main {
-      @apply px-64;
+      @apply px-64 flex flex-col gap-24;
     }
   }
 }

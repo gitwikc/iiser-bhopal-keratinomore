@@ -20,11 +20,57 @@
       @apply absolute right-4 opacity-40 text-sm text-white origin-bottom -rotate-90 translate-x-[50%]
       hover:opacity-70 transition-all duration-150;
     }
+
+    /* Brand text */
+    .brand {
+      @apply grid w-full h-screen place-items-center;
+    }
+
+    .brand .content {
+      @apply -mt-32 px-24 flex flex-col gap-0 text-[9rem] font-serif font-black
+    cursor-pointer
+    duration-500 hover:scale-[1.02];
+    }
+
+    .brand .content span {
+      @apply -m-12 p-0 text-transparent;
+    }
   }
 }
 
 .HeroSection {
   .container > .title {
     letter-spacing: -3%;
+  }
+}
+
+.brand .content {
+  background: linear-gradient(
+    to right,
+    theme("colors.primary-1"),
+    theme("colors.primary-2"),
+    theme("colors.secondary"),
+    theme("colors.secondary"),
+    theme("colors.primary-2"),
+    theme("colors.primary-1")
+  );
+  background-size: 200%;
+  background-clip: text;
+  animation-name: sideside;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+
+  span {
+    letter-spacing: -4px;
+  }
+}
+
+@keyframes sideside {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
   }
 }
