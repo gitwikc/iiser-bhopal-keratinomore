@@ -28,12 +28,12 @@ hr {
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
-.sketch-rule {
+/* .sketch-rule {
   width: 100%;
   height: 0.4em;
   border: 0;
   background: url("./assets/images/divider.svg") center/5em 100% repeat-x;
-}
+} */
 
 .footer-copyright-info {
   text-align: center;
