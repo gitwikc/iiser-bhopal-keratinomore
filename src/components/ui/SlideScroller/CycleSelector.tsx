@@ -20,7 +20,7 @@ const CycleSelector: React.FC<CycleSelectorProps> = ({
           .map((_, i) => (
             <li key={i}>
               <span
-                className={currentCycle === i + 1 ? "active" : ""}
+                className={`cycle ${currentCycle === i + 1 ? "active" : ""}`}
                 onClick={() => setCycle(i + 1)}
               >
                 {i + 1}

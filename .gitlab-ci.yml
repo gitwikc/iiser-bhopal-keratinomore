@@ -13,8 +13,8 @@ pages:
     - npm run build
     - cp -a dist/. public/
     - echo '/* /index.html 200' > public/_redirects
-  # artifacts:
-  #   paths:
-  #     - public
+  artifacts:
+    paths:
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

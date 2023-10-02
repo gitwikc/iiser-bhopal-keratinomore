@@ -5,29 +5,13 @@ import { ColorName, PALLETE } from "../../data/colors";
 import Wave from "react-wavify";
 
 type HeroSectionProps = {
-  imageURL: string;
-  title: string;
-  description: string;
-  imageCredit: React.ReactNode;
+  title: React.ReactNode;
 };
 
-const HeroSection: React.FC<HeroSectionProps> = ({
-  imageURL,
-  title,
-  description,
-  imageCredit,
-}) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ title }) => {
   return (
-    <div
-      className="HeroSection relative"
-      style={{
-        background: `linear-gradient(160deg, ${PALLETE[ColorName.PRIMARY1]}, ${
-          PALLETE[ColorName.PRIMARY2]
-        }bb, #00000000), url("${imageURL}")`,
-        backgroundSize: "cover",
-      }}
-    >
-      <motion.div
+    <div className="HeroSection relative">
+      {/* <motion.div
         transition={{ duration: 0.5 }}
         initial={{ filter: "blur(3px)" }}
         animate={{ filter: "blur(0px)" }}
@@ -56,10 +40,25 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         >
           {description}
         </motion.div>
-      </motion.div>
+      </motion.div> */}
+
+      <section className="brand">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            ease: "linear",
+            duration: 1,
+            x: { ease: "linear", duration: 0.1 },
+          }}
+          className="content"
+        >
+          {title}
+        </motion.div>
+      </section>
 
       <Wave
-        fill={PALLETE[ColorName.LIGHT]}
+        fill={PALLETE[ColorName.PRIMARY1]}
         className="absolute bottom-0 opacity-40"
         paused={false}
         options={{
@@ -70,7 +69,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         }}
       />
       <Wave
-        fill={PALLETE[ColorName.LIGHT]}
+        fill={PALLETE[ColorName.PRIMARY2]}
         className="absolute bottom-0 opacity-50"
         paused={false}
         options={{
@@ -81,7 +80,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         }}
       />
       <Wave
-        fill={PALLETE[ColorName.LIGHT]}
+        fill={PALLETE[ColorName.PRIMARY2]}
         className="absolute light bottom-0 opacity-100"
         paused={false}
         options={{
@@ -91,8 +90,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           points: 3,
         }}
       />
-
-      <div className="credit">{imageCredit}</div>
     </div>
   );
 };

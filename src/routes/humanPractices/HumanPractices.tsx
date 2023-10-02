@@ -1,24 +1,15 @@
 import HeroSection from "../../components/layout/HeroSection";
 import Paragraph from "../../components/layout/Paragraph";
-import AttributionsBackground from "/hero-bg/attributions.jpg";
+// import AttributionsBackground from "/hero-bg/attributions.jpg";
 import "./HumanPractices.css";
 
 const HumanPractices = () => (
   <div className="HumanPractices">
     <HeroSection
-      imageURL={AttributionsBackground}
-      title="Human Practices"
-      description="HOOMAN PRACTICES"
-      imageCredit={
+      title={
         <>
-          Photo by{" "}
-          <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Markus Spiske
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/photos/MbG7kwWptII?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
+          <span>Human</span>
+          <span>Practices</span>
         </>
       }
     />

@@ -2,26 +2,17 @@ import HeroSection from "../../components/layout/HeroSection";
 import Paragraph from "../../components/layout/Paragraph";
 import SlideScroller from "../../components/ui/SlideScroller";
 import Slide from "../../components/ui/SlideScroller/Slide";
-import BgImage from "../../../public/hero-bg/engineering.jpg";
+// import BgImage from "../../../public/hero-bg/engineering.jpg";
 
 import "./Engineering.css";
 
 const Engineering = () => (
   <div className="Engineering">
     <HeroSection
-      title="Engineering Success"
-      description="Hacking our way to success!"
-      imageURL={BgImage}
-      imageCredit={
+      title={
         <>
-          Photo by{" "}
-          <a href="https://unsplash.com/@_louisreed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Louis Reed
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/photos/pwcKF7L4-no?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
+          <span>Engineering</span>
+          <span>Success</span>
         </>
       }
     />

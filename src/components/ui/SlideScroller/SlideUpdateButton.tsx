@@ -3,7 +3,7 @@ import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 
 type SlideUpdateButtonProps = {
   slideUpdate: "next" | "prev";
-  action: () => void;
+  action?: () => void;
 };
 
 const SlideUpdateButton: React.FC<SlideUpdateButtonProps> = ({
@@ -14,8 +14,9 @@ const SlideUpdateButton: React.FC<SlideUpdateButtonProps> = ({
     <button
       onClick={(e) => {
         e.preventDefault();
-        action();
+        action && action();
       }}
+      disabled={action === undefined}
     >
       {slideUpdate === "next" ? (
         <BsCaretRightFill size={32} /> // Next icon
