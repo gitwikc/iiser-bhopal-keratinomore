@@ -33,7 +33,7 @@
     }
 
     .brand .content span {
-      @apply -m-12 p-0 text-transparent;
+      @apply text-transparent;
     }
   }
 }
@@ -73,4 +73,8 @@
   100% {
     background-position: 200% 0;
   }
+}
+
+.brand .content span:not(:nth-child(1)) {
+  margin-top: -5rem;
 }
