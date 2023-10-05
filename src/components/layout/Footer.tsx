@@ -5,9 +5,9 @@ import footerLogo from "../layout/assets/images/footer-logo.png";
 const Footer: React.FC = () => {
   return (
     <footer className="new_footer_area bg_color">
-      <div className="grid">
+      {/* <div className="grid">
         <hr className="sketch-rule grid__item" />
-      </div>
+      </div> */}
       <div className="new_footer_top">
         <div className="container">
           <div className="row">
