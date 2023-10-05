@@ -9,7 +9,8 @@ const Sustainable = () => (
     <HeroSection
       title={
         <>
-          <span>SDG</span>
+          <span>Sustainable</span>
+          <span>Development</span>
         </>
       }
     />
