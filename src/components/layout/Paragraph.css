@@ -36,12 +36,14 @@
   --accent: theme("colors.primary-1");
   --title-font-size: theme("fontSize.4xl");
 }
+
 .Paragraph[data-hierarchy="1"] {
   --accent: theme("colors.primary-2");
   --title-font-size: theme("fontSize.2xl");
 }
+
 .Paragraph[data-hierarchy="2"] {
-  --accent: theme("colors.secondary");
+  --accent: theme("colors.primary-2");
   --title-font-size: theme("fontSize.xl");
 }
 

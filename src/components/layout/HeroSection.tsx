@@ -90,6 +90,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title }) => {
           points: 3,
         }}
       />
+      <div className="mixer-gradient"> </div>
     </div>
   );
 };
