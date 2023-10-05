@@ -1,3 +1,8 @@
-const Model = () => <div className="Model">Model</div>;
+
+
+
+const Model = () => <div className="Model">
+    
+</div>;
 
 export default Model;
