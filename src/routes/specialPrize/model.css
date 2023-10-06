@@ -1,0 +1,39 @@
+/* Sidebar Section */
+.sidebar-section {
+    background-color: #f0f0f0; /* Background color for the sidebar section */
+     /* Add padding for spacing */
+  }
+  
+  /* Top-level section items */
+  .sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-section li {
+    font-weight: bold; /* Make top-level items bold */
+    margin-bottom: 8px; /* Add space between items */
+  }
+  
+  /* Subsections and sub-items */
+  .sidebar-section ul ul {
+    list-style-type: none;
+    padding-left: 20px; /* Indent sub-items */
+  }
+  
+  .sidebar-section ul ul li {
+    font-weight: normal; /* Remove bold for sub-items */
+    margin-bottom: 4px; /* Add space between sub-items */
+  }
+  
+  /* Style the sidebar section links */
+  .sidebar-section a {
+    text-decoration: none;
+    color: #333; /* Text color for links */
+  }
+  
+  /* Style the sidebar section links on hover */
+  .sidebar-section a:hover {
+    text-decoration: underline;
+  }
+  

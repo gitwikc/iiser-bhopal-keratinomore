@@ -5,8 +5,6 @@ import Reference from "../../components/ui/Reference";
 import { referencesList, useHighlightRefStore } from "../../data/References";
 import "./Description.css";
 // import DescriptionBackground from "/hero-bg/description.jpg";
-import {Sidebar} from "../../components/layout/sidebar";
-
 const Description = () => {
   const isHighlighted = useHighlightRefStore(
     (state) => (index: number) => state.index === index
@@ -14,13 +12,7 @@ const Description = () => {
 
   return (
     <div className="Description">
-      <Sidebar width={300} height={"100vh"}>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-        </Sidebar>
+      
       <HeroSection
         title={
           <>
