@@ -88,3 +88,10 @@ input {
     background-color: #f2f2f2;
   }
   
+
+.equations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1142,6 +1142,81 @@ Freezing of Competent Cells
 </ul>
   </div>
 </div>
+<h2 className="secondary-heading">Transformation</h2>
+    <p>
+    Transformation is a molecular biology process where foreign DNA is introduced into a host organism, typically a bacterium, altering its genetic makeup. This technique is essential for genetic engineering and the creation of genetically modified organisms.
+
+    </p>
+    <div className="accordion">
+  <input type="checkbox" id="tab16" />
+  <label className="accordion-label" htmlFor="tab16">B.subtilis 168</label>
+  <div className="accordion-content">
+  Day 1
+  <br/><ul className="protocol-list">
+<li> Streak out host cells on appropriate selective media for single colonies.</li></ul>
+<br/>
+Day 2<br/>
+<ul className="protocol-list">
+<li>Use a single colony to inoculate 1 mL of 1X MC:</li>
+</ul>
+<div className="equations">
+    <p>900 μL ddH20</p>
+    <p>100 μL 10X MC</p>
+    <p>3 μL 1M MgSO4</p>
+    <p>4 μL 10 mg/mL Tryptophan</p>
+    </div>
+<ul className="protocol-list">
+<li>Incubate at 37°C with shaking (250 rpm) for 4-5 hours.</li>
+<li>
+Aliquot 200 μL of cells and add 2 μL of plasmid (~50 ng/μL) into it. Incubate at 37°C with shaking (250 rpm) for 1.5-2 hours.</li>
+<li>
+Plate the entire volume on appropriate selective media and incubate the plate at 37°C</li></ul><br/>
+10X MC for total volume = 10 ml
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th>Components</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K2HPO4</td>
+      <td>10.7 g</td>
+    </tr>
+    <tr>
+      <td>KH2PO4</td>
+      <td>5.2 g</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td>20 g</td>
+    </tr>
+    <tr>
+      <td>Sodium citrate dihydrate</td>
+      <td>0.88 g</td>
+    </tr>
+    <tr>
+      <td>1000X Ferric ammonium citrate (2.2%)</td>
+      <td>1 mL</td>
+    </tr>
+    <tr>
+      <td>Casein hydrolysate (Oxoid)</td>
+      <td>1 g</td>
+    </tr>
+    <tr>
+      <td>Potassium glutamate monohydrate</td>
+      <td>2.2 g</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+Mix everything using half the final volume of water. Once everything is dissolved, adjust to the appropriate final volume. Filter sterilize, aliquot and store at -20°C.
+
+   
+  </div>
+</div>
 </main>
     
 </div>;
