@@ -22,8 +22,9 @@ p {
     padding-left: 40px; */
 }
 .main-heading {
-  font-size: 140px;
+  font-size: 6rem;
   color: #6267F1;
+  font-family: ;
 }
 .secondary-heading {
   font-size: 40px;
