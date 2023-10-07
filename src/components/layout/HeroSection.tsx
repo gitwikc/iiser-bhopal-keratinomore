@@ -73,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title }) => {
         className="absolute bottom-0 opacity-50"
         paused={false}
         options={{
-          height: 30,
+          height: 60,
           amplitude: 20,
           speed: 0.25,
           points: 5,
@@ -84,13 +84,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title }) => {
         className="absolute light bottom-0 opacity-100"
         paused={false}
         options={{
-          height: 20,
+          height: 50,
           amplitude: 60,
           speed: 0.15,
           points: 3,
         }}
       />
-      <div className="mixer-gradient"> </div>
+      <div className="mixer-gradient"></div>
     </div>
   );
 };

@@ -23,7 +23,7 @@
 
     /* Brand text */
     .brand {
-      @apply grid w-full h-screen place-items-center relative;
+      @apply grid w-full h-screen place-items-center relative z-40;
     }
 
     .brand .content {
@@ -37,7 +37,7 @@
     }
 
     .mixer-gradient {
-      @apply absolute w-full h-24 bg-gradient-to-b from-transparent to-light bottom-0;
+      @apply absolute w-full h-28 bg-gradient-to-b from-transparent to-light bottom-0;
     }
   }
 }
