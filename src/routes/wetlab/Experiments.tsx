@@ -1299,253 +1299,309 @@ const Experiments = () => (
         </div>
       </div>
 
-<div className="accordion">
-  <input type="checkbox" id="tab13" />
-  <label className="accordion-label" htmlFor="tab13">Inoue competent cells</label>
-  <div className="accordion-content">
-<ul className="protocol-list">
-<li> Prepare ITB and chill to 0˚C before use.</li>
-</ul>
-<br/>
-<ol className="protocol-list-num">
-    <li>Prepare 0.5 M PIPES (pH 6.7) by dissolving 15.1 g of PIPES in 80 mL of pure Milli-Q H2O. Adjust the pH of the solution to 6.7 with 5 M KOH and then add pure H2O to bring the final volume to 100 mL. Sterilize the solution by filtration through a disposable pre-rinsed Nalgene filter (0.45-µm pore size). Divide into aliquots and store frozen at −20˚C.</li>
-    <li>
-    Dissolve all of the solutes listed below in 800 mL of pure H2O. Then, add 20 mL of 0.5 M
-PIPES (pH 6.7). Adjust the volume of the ITB to 1 L with pure H2O.
-
-    </li>
-</ol>
-<br/>
-<table>
-  <thead>
-    <tr>
-      <th>Reagent</th>
-      <th>Amount per liter</th>
-      <th>Final Conc (mM)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MnCl2·4H2O</td>
-      <td>10.88 g</td>
-      <td>55</td>
-    </tr>
-    <tr>
-      <td>CaCl2·2H2O</td>
-      <td>2.20 g</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <td>KCl</td>
-      <td>18.65 g</td>
-      <td>250</td>
-    </tr>
-    <tr>
-      <td>PIPES (0.5 M, pH 6.7)</td>
-      <td>20 ml</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>H2O</td>
-      <td>To 1L</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table><br/>
-<ol className="protocol-list-num" start={3}>
-    <li>Sterilize the ITB by filtration through a pre-rinsed 0.45-µm Nalgene filter. Divide into
-aliquots and stores at −20˚C. 
-</li>
-</ol>
-<br/>
-<ul className="protocol-list">
-<li>Pick a single bacterial colony (2–3 mm in diameter) from a plate that has been incubated for 16–20 h at 37˚C. Transfer the colony into 25 mL of LB broth in a 250-mL flask. Incubate the culture for 6–8 h at 37˚C with vigorous shaking (250–300 rpm).
-</li>
-<li>At 6:00 p.m., use this starter culture to inoculate three 2-L flasks, each containing 250 mL of LB. The first flask receives 10 mL of starter culture, the second receives 4 mL, and the third
-receives 2 mL. Incubate all three flasks overnight at 18˚C–23˚C, with moderate shaking.
-</li>
-<li>The following morning, read the OD600 of all three cultures. Continue to monitor the OD every 45 min.</li>
-<li>When the OD600 of one of the cultures reaches 0.55, transfer the culture vessel to an ice-water bath for 10 min. Discard the two other cultures.</li>
-<li>
-Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
-</li>
-<li>
-Pour off the medium and store the open centrifuge bottle on a stack of paper towels for 2 min.
-</li>
-<li>
-Resuspend the cells very gently in 80 mL of ice-cold ITB by swirling.
-</li>
-<li>Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.</li>
-<li>Pour off the medium and store the open centrifuge tube on a stack of paper towels for 2 min. Use a vacuum aspirator to remove any drops of remaining medium adhering to the walls of the centrifuge tube or trapped in its neck.</li>
-</ul>
-<br/>
-Freezing of Competent Cells
-
-<ul className="protocol-list">
-<li>  Resuspend the cells gently in 20 mL of ice-cold Inoue transformation buffer.</li>
-<li>Add 1.5 mL of DMSO. Mix the bacterial suspension by swirling and then store it in ice for 10 min.
-</li>
-<li>Working quickly, dispense aliquots of the suspensions into chilled, sterile microcentrifuge tubes. Immediately snap-freeze the competent cells by immersing the tightly closed tubes in a bath of liquid nitrogen. Store the tubes at −80˚C until needed.
-</li>
-<li>Check the competency by transformation.</li>
-</ul>
+      <div className="accordion">
+        <input type="checkbox" id="tab13" />
+        <label className="accordion-label" htmlFor="tab13">
+          Inoue competent cells
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li> Prepare ITB and chill to 0˚C before use.</li>
+          </ul>
+          <br />
+          <ol className="protocol-list-num">
+            <li>
+              Prepare 0.5 M PIPES (pH 6.7) by dissolving 15.1 g of PIPES in 80
+              mL of pure Milli-Q H2O. Adjust the pH of the solution to 6.7 with
+              5 M KOH and then add pure H2O to bring the final volume to 100 mL.
+              Sterilize the solution by filtration through a disposable
+              pre-rinsed Nalgene filter (0.45-µm pore size). Divide into
+              aliquots and store frozen at −20˚C.
+            </li>
+            <li>
+              Dissolve all of the solutes listed below in 800 mL of pure H2O.
+              Then, add 20 mL of 0.5 M PIPES (pH 6.7). Adjust the volume of the
+              ITB to 1 L with pure H2O.
+            </li>
+          </ol>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>Reagent</th>
+                <th>Amount per liter</th>
+                <th>Final Conc (mM)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MnCl2·4H2O</td>
+                <td>10.88 g</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>CaCl2·2H2O</td>
+                <td>2.20 g</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>KCl</td>
+                <td>18.65 g</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>PIPES (0.5 M, pH 6.7)</td>
+                <td>20 ml</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>H2O</td>
+                <td>To 1L</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <ol className="protocol-list-num" start={3}>
+            <li>
+              Sterilize the ITB by filtration through a pre-rinsed 0.45-µm
+              Nalgene filter. Divide into aliquots and stores at −20˚C.
+            </li>
+          </ol>
+          <br />
+          <ul className="protocol-list">
+            <li>
+              Pick a single bacterial colony (2–3 mm in diameter) from a plate
+              that has been incubated for 16–20 h at 37˚C. Transfer the colony
+              into 25 mL of LB broth in a 250-mL flask. Incubate the culture for
+              6–8 h at 37˚C with vigorous shaking (250–300 rpm).
+            </li>
+            <li>
+              At 6:00 p.m., use this starter culture to inoculate three 2-L
+              flasks, each containing 250 mL of LB. The first flask receives 10
+              mL of starter culture, the second receives 4 mL, and the third
+              receives 2 mL. Incubate all three flasks overnight at 18˚C–23˚C,
+              with moderate shaking.
+            </li>
+            <li>
+              The following morning, read the OD600 of all three cultures.
+              Continue to monitor the OD every 45 min.
+            </li>
+            <li>
+              When the OD600 of one of the cultures reaches 0.55, transfer the
+              culture vessel to an ice-water bath for 10 min. Discard the two
+              other cultures.
+            </li>
+            <li>
+              Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
+            </li>
+            <li>
+              Pour off the medium and store the open centrifuge bottle on a
+              stack of paper towels for 2 min.
+            </li>
+            <li>
+              Resuspend the cells very gently in 80 mL of ice-cold ITB by
+              swirling.
+            </li>
+            <li>
+              Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
+            </li>
+            <li>
+              Pour off the medium and store the open centrifuge tube on a stack
+              of paper towels for 2 min. Use a vacuum aspirator to remove any
+              drops of remaining medium adhering to the walls of the centrifuge
+              tube or trapped in its neck.
+            </li>
+          </ul>
+          <br />
+          Freezing of Competent Cells
+          <ul className="protocol-list">
+            <li>
+              {" "}
+              Resuspend the cells gently in 20 mL of ice-cold Inoue
+              transformation buffer.
+            </li>
+            <li>
+              Add 1.5 mL of DMSO. Mix the bacterial suspension by swirling and
+              then store it in ice for 10 min.
+            </li>
+            <li>
+              Working quickly, dispense aliquots of the suspensions into
+              chilled, sterile microcentrifuge tubes. Immediately snap-freeze
+              the competent cells by immersing the tightly closed tubes in a
+              bath of liquid nitrogen. Store the tubes at −80˚C until needed.
+            </li>
+            <li>Check the competency by transformation.</li>
+          </ul>
+        </div>
+      </div>
+      <br></br>
+      <h2 className="secondary-heading">Transformation</h2>
+      <p>
+        Transformation is a molecular biology process where foreign DNA is
+        introduced into a host organism, typically a bacterium, altering its
+        genetic makeup. This technique is essential for genetic engineering and
+        the creation of genetically modified organisms.
+      </p>
+      <div className="accordion">
+        <input type="checkbox" id="tab16" />
+        <label className="accordion-label" htmlFor="tab16">
+          B.subtilis 168
+        </label>
+        <div className="accordion-content">
+          Day 1
+          <br />
+          <ul className="protocol-list">
+            <li>
+              {" "}
+              Streak out host cells on appropriate selective media for single
+              colonies.
+            </li>
+          </ul>
+          <br />
+          Day 2<br />
+          <ul className="protocol-list">
+            <li>Use a single colony to inoculate 1 mL of 1X MC:</li>
+          </ul>
+          <div className="equations">
+            <p>900 μL ddH20</p>
+            <p>100 μL 10X MC</p>
+            <p>3 μL 1M MgSO4</p>
+            <p>4 μL 10 mg/mL Tryptophan</p>
+          </div>
+          <ul className="protocol-list">
+            <li>Incubate at 37°C with shaking (250 rpm) for 4-5 hours.</li>
+            <li>
+              Aliquot 200 μL of cells and add 2 μL of plasmid (~50 ng/μL) into
+              it. Incubate at 37°C with shaking (250 rpm) for 1.5-2 hours.
+            </li>
+            <li>
+              Plate the entire volume on appropriate selective media and
+              incubate the plate at 37°C
+            </li>
+          </ul>
+          <br />
+          10X MC for total volume = 10 ml
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>Components</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>K2HPO4</td>
+                <td>10.7 g</td>
+              </tr>
+              <tr>
+                <td>KH2PO4</td>
+                <td>5.2 g</td>
+              </tr>
+              <tr>
+                <td>Glucose</td>
+                <td>20 g</td>
+              </tr>
+              <tr>
+                <td>Sodium citrate dihydrate</td>
+                <td>0.88 g</td>
+              </tr>
+              <tr>
+                <td>1000X Ferric ammonium citrate (2.2%)</td>
+                <td>1 mL</td>
+              </tr>
+              <tr>
+                <td>Casein hydrolysate (Oxoid)</td>
+                <td>1 g</td>
+              </tr>
+              <tr>
+                <td>Potassium glutamate monohydrate</td>
+                <td>2.2 g</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          Mix everything using half the final volume of water. Once everything
+          is dissolved, adjust to the appropriate final volume. Filter
+          sterilize, aliquot and store at -20°C.
+        </div>
+      </div>
+      <div className="accordion">
+        <input type="checkbox" id="tab17" />
+        <label className="accordion-label" htmlFor="tab17">
+          E. coli
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li>Thaw 100 ul competent cells on ice for about 10 minutes. </li>
+            <li>
+              Add 5 ul of ligated product to one of the micro-centrifuge of
+              competent cells and only plasmid to the other micro-centrifuge of
+              competent cells as a control and mix by flickering.
+            </li>
+            <li>Incubate the mixture in ice for about 30 minutes.</li>
+            <li>
+              Give the mixture a heat shock at 42°C for 90 seconds in a water
+              bath.
+            </li>
+            <li>
+              Place the mixture in ice again for about 5 minutes for its
+              recovery.
+            </li>
+            <li>
+              Add some volume of LB broth media to the mixture such that the
+              total volume is 1 ml.
+            </li>
+            <li>
+              Incubate it at 37°C with shaking at 200 rpm for about an hour.
+            </li>
+            <li>Centrifuge the mixture at 3000 rpm for 5 minutes.</li>
+            <li>
+              Discard 900 ul of it and resuspend the rest 100 ul using pipette.
+            </li>
+            <li>
+              Spread the resuspended product on agar plates with and without
+              selection media.
+            </li>
+            <li>Incubate it at 37°C overnight.</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <h2 className="secondary-heading">Protein Purification (his-tag)</h2>
+      <p>Description to be added.</p>
+      <div className="accordion">
+        <input type="checkbox" id="tab18" />
+        <label className="accordion-label" htmlFor="tab18">
+          Protocol
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li>Pellet the cells in a 50 ml Falcon tube. </li>
+            <li>
+              Add 20 ml of lysis buffer to suspend the pellet and sonicate (time
+              = 4 min, amplitude = 30%, pulse on = 30 sec, pulse-off = 30 sec).
+            </li>
+            <li>Centrifuge at 10,000 rpm at 4°C.</li>
+            <li>
+              Separate the pellet and supernatant. Take 20 ul of the supernatant
+              to a fresh tube. This will be a total soluble protein labeled as
+              “T”.
+            </li>
+            <li>
+              Pipette 1 ml of lysate onto the Ni-NTA resin in the 15 ml tube.
+              Put on the cap and keep it in ice for 1 hr.
+            </li>
+            <li>
+              Aspirate the 20% ethanol in Ni-NTA agarose, and wash Ni-NTA
+              agarose repeatedly with PBSbuffer(1×).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </div>
-</div>
-<br></br>
-<h2 className="secondary-heading">Transformation</h2>
-    <p>
-    Transformation is a molecular biology process where foreign DNA is introduced into a host organism, typically a bacterium, altering its genetic makeup. This technique is essential for genetic engineering and the creation of genetically modified organisms.
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab16" />
-  <label className="accordion-label" htmlFor="tab16">B.subtilis 168</label>
-  <div className="accordion-content">
-  Day 1
-  <br/><ul className="protocol-list">
-<li> Streak out host cells on appropriate selective media for single colonies.</li></ul>
-<br/>
-Day 2<br/>
-<ul className="protocol-list">
-<li>Use a single colony to inoculate 1 mL of 1X MC:</li>
-</ul>
-<div className="equations">
-    <p>900 μL ddH20</p>
-    <p>100 μL 10X MC</p>
-    <p>3 μL 1M MgSO4</p>
-    <p>4 μL 10 mg/mL Tryptophan</p>
-    </div>
-<ul className="protocol-list">
-<li>Incubate at 37°C with shaking (250 rpm) for 4-5 hours.</li>
-<li>
-Aliquot 200 μL of cells and add 2 μL of plasmid (~50 ng/μL) into it. Incubate at 37°C with shaking (250 rpm) for 1.5-2 hours.</li>
-<li>
-Plate the entire volume on appropriate selective media and incubate the plate at 37°C</li></ul><br/>
-10X MC for total volume = 10 ml
-<br/>
-<table>
-  <thead>
-    <tr>
-      <th>Components</th>
-      <th>Amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>K2HPO4</td>
-      <td>10.7 g</td>
-    </tr>
-    <tr>
-      <td>KH2PO4</td>
-      <td>5.2 g</td>
-    </tr>
-    <tr>
-      <td>Glucose</td>
-      <td>20 g</td>
-    </tr>
-    <tr>
-      <td>Sodium citrate dihydrate</td>
-      <td>0.88 g</td>
-    </tr>
-    <tr>
-      <td>1000X Ferric ammonium citrate (2.2%)</td>
-      <td>1 mL</td>
-    </tr>
-    <tr>
-      <td>Casein hydrolysate (Oxoid)</td>
-      <td>1 g</td>
-    </tr>
-    <tr>
-      <td>Potassium glutamate monohydrate</td>
-      <td>2.2 g</td>
-    </tr>
-  </tbody>
-</table>
-<br/>
-Mix everything using half the final volume of water. Once everything is dissolved, adjust to the appropriate final volume. Filter sterilize, aliquot and store at -20°C.
-
-   
-  </div>
-</div>
-<div className="accordion">
-  <input type="checkbox" id="tab17" />
-  <label className="accordion-label" htmlFor="tab17">E. coli</label>
-  <div className="accordion-content">
-  <ul className="protocol-list">
-<li>Thaw 100 ul competent cells on ice for about 10 minutes. </li>
-<li>
-Add 5 ul of ligated product to one of the micro-centrifuge of competent cells and only plasmid to the other micro-centrifuge of competent cells as a control and mix by flickering.
-
-</li>
-<li>
-Incubate the mixture in ice for about 30 minutes. 
-</li>
-<li>
-Give the mixture a heat shock at 42°C for 90 seconds in a water bath.
-</li>
-<li>
-Place the mixture in ice again for about 5 minutes for its recovery.
-</li>
-<li>
-Add some volume of LB broth media to the mixture such that the total volume is 1 ml. 
-</li>
-<li>
-Incubate it at 37°C with shaking at 200 rpm for about an hour.
-</li>
-<li>
-Centrifuge the mixture at 3000 rpm for 5 minutes.
-</li>
-<li>
-Discard 900 ul of it and resuspend the rest 100 ul using pipette.
-</li>
-<li>
-Spread the resuspended product on agar plates with and without selection media. 
-</li>
-<li>
-Incubate it at 37°C overnight.
-</li>
-</ul>
-
-   
-  </div>
-</div>
-<br/>
-<h2 className="secondary-heading">Protein Purification (his-tag)</h2>
-    <p>
-    Description to be added.
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab18" />
-  <label className="accordion-label" htmlFor="tab18">Protocol</label>
-  <div className="accordion-content">
-  <ul className="protocol-list">
-<li>Pellet the cells in a 50 ml Falcon tube. </li>
-<li>
-Add 20 ml of lysis buffer to suspend the pellet and sonicate (time = 4 min, amplitude = 30%, pulse on = 30 sec, pulse-off = 30 sec).
-
-</li>
-<li>
-Centrifuge at 10,000 rpm at 4°C. 
-</li>
-<li>
-Separate the pellet and supernatant. Take 20 ul of the supernatant to a fresh tube. This will be a total soluble protein labeled as “T”.
-
-</li>
-<li>
-Pipette 1 ml of lysate onto the Ni-NTA resin in the 15 ml tube. Put on the cap and keep it in ice for 1 hr. 
-
-</li>
-<li>
-Aspirate the 20% ethanol in Ni-NTA agarose, and wash Ni-NTA agarose repeatedly with PBSbuffer(1×).
-
-</li>
-
-</ul>
-</div>
-</div>
-</main>
-    
-</div>;
+);
 
 export default Experiments;
