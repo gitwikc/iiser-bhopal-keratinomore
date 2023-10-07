@@ -1142,6 +1142,7 @@ Freezing of Competent Cells
 </ul>
   </div>
 </div>
+<br></br>
 <h2 className="secondary-heading">Transformation</h2>
     <p>
     Transformation is a molecular biology process where foreign DNA is introduced into a host organism, typically a bacterium, altering its genetic makeup. This technique is essential for genetic engineering and the creation of genetically modified organisms.
@@ -1216,6 +1217,83 @@ Mix everything using half the final volume of water. Once everything is dissolve
 
    
   </div>
+</div>
+<div className="accordion">
+  <input type="checkbox" id="tab17" />
+  <label className="accordion-label" htmlFor="tab17">E. coli</label>
+  <div className="accordion-content">
+  <ul className="protocol-list">
+<li>Thaw 100 ul competent cells on ice for about 10 minutes. </li>
+<li>
+Add 5 ul of ligated product to one of the micro-centrifuge of competent cells and only plasmid to the other micro-centrifuge of competent cells as a control and mix by flickering.
+
+</li>
+<li>
+Incubate the mixture in ice for about 30 minutes. 
+</li>
+<li>
+Give the mixture a heat shock at 42°C for 90 seconds in a water bath.
+</li>
+<li>
+Place the mixture in ice again for about 5 minutes for its recovery.
+</li>
+<li>
+Add some volume of LB broth media to the mixture such that the total volume is 1 ml. 
+</li>
+<li>
+Incubate it at 37°C with shaking at 200 rpm for about an hour.
+</li>
+<li>
+Centrifuge the mixture at 3000 rpm for 5 minutes.
+</li>
+<li>
+Discard 900 ul of it and resuspend the rest 100 ul using pipette.
+</li>
+<li>
+Spread the resuspended product on agar plates with and without selection media. 
+</li>
+<li>
+Incubate it at 37°C overnight.
+</li>
+</ul>
+
+   
+  </div>
+</div>
+<br/>
+<h2 className="secondary-heading">Protein Purification (his-tag)</h2>
+    <p>
+    Description to be added.
+
+    </p>
+    <div className="accordion">
+  <input type="checkbox" id="tab18" />
+  <label className="accordion-label" htmlFor="tab18">Protocol</label>
+  <div className="accordion-content">
+  <ul className="protocol-list">
+<li>Pellet the cells in a 50 ml Falcon tube. </li>
+<li>
+Add 20 ml of lysis buffer to suspend the pellet and sonicate (time = 4 min, amplitude = 30%, pulse on = 30 sec, pulse-off = 30 sec).
+
+</li>
+<li>
+Centrifuge at 10,000 rpm at 4°C. 
+</li>
+<li>
+Separate the pellet and supernatant. Take 20 ul of the supernatant to a fresh tube. This will be a total soluble protein labeled as “T”.
+
+</li>
+<li>
+Pipette 1 ml of lysate onto the Ni-NTA resin in the 15 ml tube. Put on the cap and keep it in ice for 1 hr. 
+
+</li>
+<li>
+Aspirate the 20% ethanol in Ni-NTA agarose, and wash Ni-NTA agarose repeatedly with PBSbuffer(1×).
+
+</li>
+
+</ul>
+</div>
 </div>
 </main>
     
