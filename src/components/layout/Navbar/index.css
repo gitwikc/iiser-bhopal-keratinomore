@@ -2,32 +2,37 @@
 
 @layer components {
   .Navbar {
-    @apply fixed flex items-center w-full bg-dark py-4 px-3 
-bg-opacity-90 backdrop-blur-md shadow-md z-[999];
+    @apply fixed flex items-center w-full bg-dark 
+    bg-opacity-90 backdrop-blur-md shadow-md z-[999];
 
     .nav_links {
       @apply flex-1 flex items-center justify-evenly text-sm;
     }
 
     .NavItem {
-      @apply relative flex items-center gap-2 text-light
+      @apply relative flex items-center gap-2 text-light py-4 px-3
+      w-full h-full
       cursor-pointer hover:text-primary-2;
 
       ul.dropdown {
-        @apply absolute backdrop-blur-xl top-12 bg-dark text-light rounded-lg w-48
-        flex flex-col text-sm z-[999]
-        bg-opacity-80 shadow-md
+        @apply absolute top-14 bg-dark text-light rounded-lg
+        flex flex-col text-sm z-[999] overflow-hidden w-48
+        bg-opacity-90 backdrop-blur-xl shadow-md
         transition-all duration-300 opacity-0;
 
         &.active {
           @apply opacity-100;
+
+          li {
+            @apply h-auto;
+          }
         }
 
         li {
-          @apply flex justify-center items-center;
+          @apply flex justify-center items-center h-0;
 
           a {
-            @apply px-3 py-4 w-full h-full
+            @apply px-3 py-4 w-full h-full overflow-hidden
             hover:bg-light hover:bg-opacity-[15%] hover:text-secondary
             transition-all duration-200;
           }
