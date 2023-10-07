@@ -1,29 +1,14 @@
-import { motion } from "framer-motion";
-
 import "./index.css";
 import Problem, { ProblemLayout } from "../components/layout/Problem";
 import { ColorName } from "../data/colors";
 import { GiChicken, GiSandsOfTime } from "react-icons/gi";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className="Home">
-      <section className="brand">
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            ease: "linear",
-            duration: 1,
-            x: { ease: "linear", duration: 0.1 },
-          }}
-          className="content"
-        >
-          <span>Kerati</span>
-          <span>No</span>
-          <span>More</span>
-        </motion.div>
-      </section>
+      <section className="brand"></section>
 
       {/* Problem statement story */}
       <Problem
@@ -38,6 +23,33 @@ const Home = () => {
         graphic={<GiSandsOfTime size={192} />}
         content={<>Coming Soon</>}
       />
+
+      <section className="w-screen flex gap-4 justify-evenly">
+        <Link to="/description">
+          <img
+            className="w-48 h-48"
+            src="https://static.igem.wiki/teams/4958/wiki/cur-sol-icons/factory.gif"
+          />
+        </Link>
+        <Link to="/description">
+          <img
+            className="w-48 h-48"
+            src="https://static.igem.wiki/teams/4958/wiki/cur-sol-icons/chem.gif"
+          />
+        </Link>
+        <Link to="/description">
+          <img
+            className="w-48 h-48"
+            src="https://static.igem.wiki/teams/4958/wiki/cur-sol-icons/landfill.gif"
+          />
+        </Link>
+        <Link to="/description">
+          <img
+            className="w-48 h-48"
+            src="https://static.igem.wiki/teams/4958/wiki/cur-sol-icons/inci.gif"
+          />
+        </Link>
+      </section>
     </div>
   );
 };

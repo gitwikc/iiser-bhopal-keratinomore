@@ -17,26 +17,15 @@ const NavItem: React.FC<NavItemProps> = ({ icon, title, links }) => {
     <div
       className="NavItem"
       id={title}
+      onMouseOver={() => setShowDropdown(true)}
       onMouseLeave={() => {
-        setTimeout(() => {
-          setShowDropdown(false);
-        }, 200);
+        setShowDropdown(false);
       }}
     >
-      <section
-        className="flex items-center gap-2 justify-evenly"
-        onMouseOver={() => setShowDropdown(true)}
-      >
-        <span className="icon">{icon}</span>
-        <span className="text">{title}</span>
-      </section>
+      <span className="icon">{icon}</span>
+      <span className="text">{title}</span>
 
-      <ul
-        className={`dropdown ${showDropdown && "active"}`}
-        style={{
-          display: showDropdown ? "block" : "none",
-        }}
-      >
+      <ul className={`dropdown ${showDropdown && "active"}`}>
         {links.map((link) => (
           <li>
             <Link to={link.href}>{link.title}</Link>
