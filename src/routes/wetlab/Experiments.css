@@ -11,21 +11,32 @@
 p {
     max-width: 900px;
 }
-.main-heading {
-    font-size: 140px;
+
+.main-body {
     /* display: flex;
+    flex-direction: column;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     padding-right: 40px;
     padding-left: 40px; */
 }
+.main-heading {
+    font-size: 140px;
+    
+}
 .secondary-heading {
     font-size: 40px;
+    max-width: 900px;
 }
 
 .protocol-list {
-    padding-left: 10px;
+    padding-left: 16px;
     list-style-type: circle;
+}
+.protocol-list-num {
+    list-style-type: upper-roman;
+    padding-left: 16px;
 }
 
 
@@ -54,10 +65,26 @@ input {
   .accordion-content {
     max-height: 0;
     padding: 0 1em;
-    background: rgb(255, 255, 255,0.5);
+    background: rgb(255, 255, 255,0.7);
     transition: all 0.35s;
   }
   input:checked ~ .accordion-content {
-    max-height: 100vh;
+    max-height: 300vh;
     padding: 1em;
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  
