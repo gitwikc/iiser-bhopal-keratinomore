@@ -1,0 +1,90 @@
+@import "/src/index.css";
+
+@layer components {
+  .Experiments {
+    main {
+      @apply w-screen flex flex-col gap-4 items-center;
+    }
+  }
+}
+
+p {
+    max-width: 900px;
+}
+
+.main-body {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px; */
+}
+.main-heading {
+    font-size: 140px;
+    
+}
+.secondary-heading {
+    font-size: 40px;
+    max-width: 900px;
+}
+
+.protocol-list {
+    padding-left: 16px;
+    list-style-type: circle;
+}
+.protocol-list-num {
+    list-style-type: upper-roman;
+    padding-left: 16px;
+}
+
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .accordion {
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 900px;
+  }
+  .accordion-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+  }
+  .accordion-content {
+    max-height: 0;
+    padding: 0 1em;
+    background: rgb(255, 255, 255,0.7);
+    transition: all 0.35s;
+  }
+  input:checked ~ .accordion-content {
+    max-height: 300vh;
+    padding: 1em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  
