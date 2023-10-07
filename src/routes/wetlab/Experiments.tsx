@@ -1299,519 +1299,644 @@ const Experiments = () => (
         </div>
       </div>
 
-<div className="accordion">
-  <input type="checkbox" id="tab13" />
-  <label className="accordion-label" htmlFor="tab13">Inoue competent cells</label>
-  <div className="accordion-content">
-<ul className="protocol-list">
-<li> Prepare ITB and chill to 0˚C before use.</li>
-</ul>
-<br/>
-<ol className="protocol-list-num">
-    <li>Prepare 0.5 M PIPES (pH 6.7) by dissolving 15.1 g of PIPES in 80 mL of pure Milli-Q H2O. Adjust the pH of the solution to 6.7 with 5 M KOH and then add pure H2O to bring the final volume to 100 mL. Sterilize the solution by filtration through a disposable pre-rinsed Nalgene filter (0.45-µm pore size). Divide into aliquots and store frozen at −20˚C.</li>
-    <li>
-    Dissolve all of the solutes listed below in 800 mL of pure H2O. Then, add 20 mL of 0.5 M
-PIPES (pH 6.7). Adjust the volume of the ITB to 1 L with pure H2O.
+      <div className="accordion">
+        <input type="checkbox" id="tab13" />
+        <label className="accordion-label" htmlFor="tab13">
+          Inoue competent cells
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li> Prepare ITB and chill to 0˚C before use.</li>
+          </ul>
+          <br />
+          <ol className="protocol-list-num">
+            <li>
+              Prepare 0.5 M PIPES (pH 6.7) by dissolving 15.1 g of PIPES in 80
+              mL of pure Milli-Q H2O. Adjust the pH of the solution to 6.7 with
+              5 M KOH and then add pure H2O to bring the final volume to 100 mL.
+              Sterilize the solution by filtration through a disposable
+              pre-rinsed Nalgene filter (0.45-µm pore size). Divide into
+              aliquots and store frozen at −20˚C.
+            </li>
+            <li>
+              Dissolve all of the solutes listed below in 800 mL of pure H2O.
+              Then, add 20 mL of 0.5 M PIPES (pH 6.7). Adjust the volume of the
+              ITB to 1 L with pure H2O.
+            </li>
+          </ol>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>Reagent</th>
+                <th>Amount per liter</th>
+                <th>Final Conc (mM)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MnCl2·4H2O</td>
+                <td>10.88 g</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>CaCl2·2H2O</td>
+                <td>2.20 g</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>KCl</td>
+                <td>18.65 g</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>PIPES (0.5 M, pH 6.7)</td>
+                <td>20 ml</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>H2O</td>
+                <td>To 1L</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <ol className="protocol-list-num" start={3}>
+            <li>
+              Sterilize the ITB by filtration through a pre-rinsed 0.45-µm
+              Nalgene filter. Divide into aliquots and stores at −20˚C.
+            </li>
+          </ol>
+          <br />
+          <ul className="protocol-list">
+            <li>
+              Pick a single bacterial colony (2–3 mm in diameter) from a plate
+              that has been incubated for 16–20 h at 37˚C. Transfer the colony
+              into 25 mL of LB broth in a 250-mL flask. Incubate the culture for
+              6–8 h at 37˚C with vigorous shaking (250–300 rpm).
+            </li>
+            <li>
+              At 6:00 p.m., use this starter culture to inoculate three 2-L
+              flasks, each containing 250 mL of LB. The first flask receives 10
+              mL of starter culture, the second receives 4 mL, and the third
+              receives 2 mL. Incubate all three flasks overnight at 18˚C–23˚C,
+              with moderate shaking.
+            </li>
+            <li>
+              The following morning, read the OD600 of all three cultures.
+              Continue to monitor the OD every 45 min.
+            </li>
+            <li>
+              When the OD600 of one of the cultures reaches 0.55, transfer the
+              culture vessel to an ice-water bath for 10 min. Discard the two
+              other cultures.
+            </li>
+            <li>
+              Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
+            </li>
+            <li>
+              Pour off the medium and store the open centrifuge bottle on a
+              stack of paper towels for 2 min.
+            </li>
+            <li>
+              Resuspend the cells very gently in 80 mL of ice-cold ITB by
+              swirling.
+            </li>
+            <li>
+              Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
+            </li>
+            <li>
+              Pour off the medium and store the open centrifuge tube on a stack
+              of paper towels for 2 min. Use a vacuum aspirator to remove any
+              drops of remaining medium adhering to the walls of the centrifuge
+              tube or trapped in its neck.
+            </li>
+          </ul>
+          <br />
+          Freezing of Competent Cells
+          <ul className="protocol-list">
+            <li>
+              {" "}
+              Resuspend the cells gently in 20 mL of ice-cold Inoue
+              transformation buffer.
+            </li>
+            <li>
+              Add 1.5 mL of DMSO. Mix the bacterial suspension by swirling and
+              then store it in ice for 10 min.
+            </li>
+            <li>
+              Working quickly, dispense aliquots of the suspensions into
+              chilled, sterile microcentrifuge tubes. Immediately snap-freeze
+              the competent cells by immersing the tightly closed tubes in a
+              bath of liquid nitrogen. Store the tubes at −80˚C until needed.
+            </li>
+            <li>Check the competency by transformation.</li>
+          </ul>
+        </div>
+      </div>
+      <br></br>
+      <h2 className="secondary-heading">Transformation</h2>
+      <p>
+        Transformation is a molecular biology process where foreign DNA is
+        introduced into a host organism, typically a bacterium, altering its
+        genetic makeup. This technique is essential for genetic engineering and
+        the creation of genetically modified organisms.
+      </p>
+      <div className="accordion">
+        <input type="checkbox" id="tab16" />
+        <label className="accordion-label" htmlFor="tab16">
+          B.subtilis 168
+        </label>
+        <div className="accordion-content">
+          Day 1
+          <br />
+          <ul className="protocol-list">
+            <li>
+              {" "}
+              Streak out host cells on appropriate selective media for single
+              colonies.
+            </li>
+          </ul>
+          <br />
+          Day 2<br />
+          <ul className="protocol-list">
+            <li>Use a single colony to inoculate 1 mL of 1X MC:</li>
+          </ul>
+          <div className="equations">
+            <p>900 μL ddH20</p>
+            <p>100 μL 10X MC</p>
+            <p>3 μL 1M MgSO4</p>
+            <p>4 μL 10 mg/mL Tryptophan</p>
+          </div>
+          <ul className="protocol-list">
+            <li>Incubate at 37°C with shaking (250 rpm) for 4-5 hours.</li>
+            <li>
+              Aliquot 200 μL of cells and add 2 μL of plasmid (~50 ng/μL) into
+              it. Incubate at 37°C with shaking (250 rpm) for 1.5-2 hours.
+            </li>
+            <li>
+              Plate the entire volume on appropriate selective media and
+              incubate the plate at 37°C
+            </li>
+          </ul>
+          <br />
+          10X MC for total volume = 10 ml
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>Components</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>K2HPO4</td>
+                <td>10.7 g</td>
+              </tr>
+              <tr>
+                <td>KH2PO4</td>
+                <td>5.2 g</td>
+              </tr>
+              <tr>
+                <td>Glucose</td>
+                <td>20 g</td>
+              </tr>
+              <tr>
+                <td>Sodium citrate dihydrate</td>
+                <td>0.88 g</td>
+              </tr>
+              <tr>
+                <td>1000X Ferric ammonium citrate (2.2%)</td>
+                <td>1 mL</td>
+              </tr>
+              <tr>
+                <td>Casein hydrolysate (Oxoid)</td>
+                <td>1 g</td>
+              </tr>
+              <tr>
+                <td>Potassium glutamate monohydrate</td>
+                <td>2.2 g</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          Mix everything using half the final volume of water. Once everything
+          is dissolved, adjust to the appropriate final volume. Filter
+          sterilize, aliquot and store at -20°C.
+        </div>
+      </div>
+      <div className="accordion">
+        <input type="checkbox" id="tab17" />
+        <label className="accordion-label" htmlFor="tab17">
+          E. coli
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li>Thaw 100 ul competent cells on ice for about 10 minutes. </li>
+            <li>
+              Add 5 ul of ligated product to one of the micro-centrifuge of
+              competent cells and only plasmid to the other micro-centrifuge of
+              competent cells as a control and mix by flickering.
+            </li>
+            <li>Incubate the mixture in ice for about 30 minutes.</li>
+            <li>
+              Give the mixture a heat shock at 42°C for 90 seconds in a water
+              bath.
+            </li>
+            <li>
+              Place the mixture in ice again for about 5 minutes for its
+              recovery.
+            </li>
+            <li>
+              Add some volume of LB broth media to the mixture such that the
+              total volume is 1 ml.
+            </li>
+            <li>
+              Incubate it at 37°C with shaking at 200 rpm for about an hour.
+            </li>
+            <li>Centrifuge the mixture at 3000 rpm for 5 minutes.</li>
+            <li>
+              Discard 900 ul of it and resuspend the rest 100 ul using pipette.
+            </li>
+            <li>
+              Spread the resuspended product on agar plates with and without
+              selection media.
+            </li>
+            <li>Incubate it at 37°C overnight.</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <h2 className="secondary-heading">Protein Purification (his-tag)</h2>
+      <p>Description to be added.</p>
+      <div className="accordion">
+        <input type="checkbox" id="tab18" />
+        <label className="accordion-label" htmlFor="tab18">
+          Protocol
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li>Pellet the cells in a 50 ml Falcon tube. </li>
+            <li>
+              Add 20 ml of lysis buffer to suspend the pellet and sonicate (time
+              = 4 min, amplitude = 30%, pulse on = 30 sec, pulse-off = 30 sec).
+            </li>
+            <li>Centrifuge at 10,000 rpm at 4°C.</li>
+            <li>
+              Separate the pellet and supernatant. Take 20 ul of the supernatant
+              to a fresh tube. This will be a total soluble protein labeled as
+              “T”.
+            </li>
+            <li>
+              Pipette 1 ml of lysate onto the Ni-NTA resin in the 15 ml tube.
+              Put on the cap and keep it in ice for 1 hr.
+            </li>
+            <li>
+              Aspirate the 20% ethanol in Ni-NTA agarose, and wash Ni-NTA
+              agarose repeatedly with PBSbuffer(1×).
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <h2 className="secondary-heading">SDS-Page</h2>
+      <p>
+        SDS-PAGE (Sodium Dodecyl Sulfate-Polyacrylamide Gel Electrophoresis) is
+        a widely used laboratory technique for separating proteins based on
+        their molecular weight. In this method, proteins are denatured with SDS
+        and then separated in a polyacrylamide gel under the influence of an
+        electric field. The resulting protein bands can be visualized, allowing
+        for protein analysis, quantification, and purity assessment.
+      </p>
+      <div className="accordion">
+        <input type="checkbox" id="tab19" />
+        <label className="accordion-label" htmlFor="tab19">
+          Protocol
+        </label>
+        <div className="accordion-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Components</th>
+                <th>Stacking gel (4%)</th>
+                <th>Resolving gel (12%)</th>
+                <th>Resolving gel (10%)</th>
+                <th>Resolving gel (16%)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>30% Acrylamide/bis solution</td>
+                <td>1.98 ml</td>
+                <td>6.0 ml</td>
+                <td>3.34 ml</td>
+                <td>5.334 ml</td>
+              </tr>
+              <tr>
+                <td>0.5 M Tris HCl, pH 6.8</td>
+                <td>3.78 ml</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>1.5 M Tris HCl, pH 8.8</td>
+                <td>-</td>
+                <td>3.75 ml</td>
+                <td>2.5 ml</td>
+                <td>2.5 ml</td>
+              </tr>
+              <tr>
+                <td>10% SDS</td>
+                <td>150 ul</td>
+                <td>150 ul</td>
+                <td>100 ul</td>
+                <td>100 ul</td>
+              </tr>
+              <tr>
+                <td>Distilled water</td>
+                <td>9 ml</td>
+                <td>5.03 ml</td>
+                <td>4 ml</td>
+                <td>2 ml</td>
+              </tr>
+              <tr>
+                <td>TEMED</td>
+                <td>15 ul</td>
+                <td>7.5 ul</td>
+                <td>5 ul</td>
+                <td>5 ul</td>
+              </tr>
+              <tr>
+                <td>10% APS</td>
+                <td>75 ul</td>
+                <td>75 ul</td>
+                <td>50 ul</td>
+                <td>50 ul</td>
+              </tr>
+              <tr>
+                <td>Total Volume</td>
+                <td>15 ml</td>
+                <td>15 ml</td>
+                <td>10 ml</td>
+                <td>10 ml</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <strong>Running buffer:</strong>
+          <br />
+          25 mM Tris
+          <br />
+          250 mM glycine (pH=8.3)
+          <br />
+          0.1% SDS
+          <br />
+          <br />
+          ASSEMBLE AND PREPARATION OF GEL
+          <br />
+          <ul className="protocol-list">
+            <li>
+              Locate glass plates, 1 mm spacers, plate holders and mount, tank,
+              electrodes and power supply.{" "}
+            </li>
+            <li>
+              Assemble casting cell using glass plates, spacers and plate
+              holder.
+            </li>
+            <li>
+              Prepare resolving gel based on protein size either 10%,12% or 16%
+              mixture in a falcon tube.
+            </li>
+            <li>
+              Pipette 4.5 ml of gel mixture into each casting cell (between
+              glass plates, 1 mm spacer).
+            </li>
+            <li>
+              Carefully layer 100 ul of H2O on top of gel to prevent drying.
+            </li>
+            <li>Allow 20 min for the gel to harden.</li>
+            <li>Remove the layer of liquid on top of the gel.</li>
+            <li>Prepare stacking gel mixture.</li>
+            <li>
+              Pipette 2 ml of stacking gel mixture on top of the resolving gel
+              in the casting cell.
+            </li>
+            <li>Insert plastic combs to form sample wells.</li>
+            <li>Allow 20 min for stacking gel to harden.</li>
+            <li>
+              Remove gel and holder from casting cell and mount onto electrode
+              assembly.
+            </li>
+            <li>Inset electrode assembly into tank. </li>
+            <li>Remove combs and fill the tank with a 500 ml tank buffer.</li>
+          </ul>
+          <br />
+          SAMPLE PREPARATION AND ELECTROPHORESIS
+          <br />
+          <ul className="protocol-list">
+            <li>Take your protein sample.</li>
+            <li>Add 15 ul of sample buffer to the tube.</li>
+            <li>Keep the tubes on a heating block at 50°C for 5 min.</li>
+            <li>Again centrifuge the tubes. </li>
+            <li>
+              Take 40 ul of supernatant and load onto the sample well using gel
+              loading pipette tips.{" "}
+            </li>
+            <li>Also load 10 ul of protein ladder. </li>
+            <li>
+              Connect the power supply to a gel electrode and apply voltage
+              (70-100mV, 30 milliAmps).
+            </li>
+            <li>
+              Continue electrophoresis until the tracking dye moves to the
+              bottom of the gel.
+            </li>
+            <li>Turn off voltage and remove gel from the tank. </li>
+            <li>
+              Stain gel with Coomassie blue and destain gel using H2O or
+              destaining solution to visualize protein bands.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <h2 className="secondary-heading">
+        BACILLUS GENOME INTEGRATION PROTOCOL-STARCH HYDROLYSIS TEST
+      </h2>
+      <p>
+        Genome integration test of Bacillus through starch test involves the
+        assessment of amylase activity. Bacillus strains with integrated amylase
+        genes can break down starch into simpler sugars, forming clear zones
+        around colonies on starch agar plates. This assay confirms successful
+        genomic integration, indicating the presence and functionality of the
+        introduced gene in the bacterial genome.
+      </p>
+      <div className="accordion">
+        <input type="checkbox" id="tab20" />
+        <label className="accordion-label" htmlFor="tab20">
+          Protocol
+        </label>
+        <div className="accordion-content">
+          <ul className="protocol-list">
+            <li>
+              Divide the Starch agar plate into four quadrants for four
+              different inoculations.{" "}
+            </li>
+            <li>
+              Use a fresh (16- to 18-hour) pure culture of test bacteria as an
+              inoculation source and streak on starch agar plate.
+            </li>
+            <li>Incubate plates for 24 to 48 hours at 37°C in an incubator.</li>
+          </ul>
+          <br />
+          STARCH HYDROLYSIS TEST
+          <br />
+          <ul className="protocol-list">
+            <li>
+              After proper incubation, flood the surface of the agar with Gram’s
+              iodine solution.
+            </li>
+            <li>
+              Record results immediately as the blue-black color formed with
+              starch may fade.
+            </li>
+            <li>
+              When iodine solution is added to a solution containing starch, it
+              forms a blue-black complex with the starch molecules, producing a
+              deep blue-black color. This indicates the presence of starch, thus
+              absence of amylase.
+            </li>
+            <li>
+              Appearance of faded color shows absence of starch, thus presence
+              of amylase.
+            </li>
+            <li>
+              Therefore, deep blue/black color shows positive colonies for
+              genome integration in Bacillus subtilis 168.{" "}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <h2 className="secondary-heading">Western Blotting</h2>
+      <p>
+        Western blotting is used to detect and analyze specific proteins within
+        a complex mixture. It involves separating proteins by electrophoresis,
+        transferring them to a membrane, and then using antibodies to identify
+        and visualize the target protein.
+      </p>
+      <div className="accordion">
+        <input type="checkbox" id="tab21" />
+        <label className="accordion-label" htmlFor="tab21">
+          Protocol
+        </label>
+        <div className="accordion-content">
+          <ol className="protocol-list-num">
+            <li>
+              <strong>Gel Electrophoresis:</strong>
+            </li>
+          </ol>
+          <ul className="protocol-list">
+            <li>Run an SDS-PAGE to separate the proteins on a gel.</li>
+          </ul>
+          <br />
+          <ol className="protocol-list-num" start={2}>
+            <li>Protein Transfer:</li>
+          </ol>
+          <ul className="protocol-list">
+            <li>
+              Cut a sheet of nitrocellulose paper and 6 sheets of absorbent
+              filter paper to the exact size of the SDS-PAGE gel.
+            </li>
+            <li>
+              Pre-wet the nitrocellulose membrane in deionized water. Wear
+              gloves when handling the membrane.
+            </li>
+            <li>
+              Soak the gel, nitrocellulose membrane, and absorbent papers in a
+              transfer buffer for 5 minutes.
+            </li>
+            <li>
+              Apply the membrane to the surface of the gel. Remove any air
+              bubbles by rolling a pipette across the membrane.
+            </li>
+            <li>
+              Sandwich the gel, blotting membrane and absorbent papers as
+              follows: bottom plate (cathode) - 3 sheets of absorbent paper –
+              gel – membrane – 3 sheets of absorbent paper – top plate (anode).
+              Verify the orientation of the gel and membrane to ensure that the
+              proteins migrate in the correct direction; the membrane should be
+              above the gel, facing the positive electrode.
+            </li>
+            <li>
+              Connect the electrodes. Run the transfer for 45 minutes to 1.5
+              hours with a current of 0.8 mA/cm2.
+            </li>
+            <li>
+              Disconnect the power supply. Remove and disassemble the sandwich,
+              removing the nitrocellulose membrane. A corner may be snipped off
+              in order to retain the orientation of the membrane.
+            </li>
+          </ul>
+          <br />
+          <ol className="protocol-list-num" start={3}>
+            <li>Detection of Target Protein</li>
+          </ol>
 
-    </li>
-</ol>
-<br/>
-<table>
-  <thead>
-    <tr>
-      <th>Reagent</th>
-      <th>Amount per liter</th>
-      <th>Final Conc (mM)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>MnCl2·4H2O</td>
-      <td>10.88 g</td>
-      <td>55</td>
-    </tr>
-    <tr>
-      <td>CaCl2·2H2O</td>
-      <td>2.20 g</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <td>KCl</td>
-      <td>18.65 g</td>
-      <td>250</td>
-    </tr>
-    <tr>
-      <td>PIPES (0.5 M, pH 6.7)</td>
-      <td>20 ml</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <td>H2O</td>
-      <td>To 1L</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table><br/>
-<ol className="protocol-list-num" start={3}>
-    <li>Sterilize the ITB by filtration through a pre-rinsed 0.45-µm Nalgene filter. Divide into
-aliquots and stores at −20˚C. 
-</li>
-</ol>
-<br/>
-<ul className="protocol-list">
-<li>Pick a single bacterial colony (2–3 mm in diameter) from a plate that has been incubated for 16–20 h at 37˚C. Transfer the colony into 25 mL of LB broth in a 250-mL flask. Incubate the culture for 6–8 h at 37˚C with vigorous shaking (250–300 rpm).
-</li>
-<li>At 6:00 p.m., use this starter culture to inoculate three 2-L flasks, each containing 250 mL of LB. The first flask receives 10 mL of starter culture, the second receives 4 mL, and the third
-receives 2 mL. Incubate all three flasks overnight at 18˚C–23˚C, with moderate shaking.
-</li>
-<li>The following morning, read the OD600 of all three cultures. Continue to monitor the OD every 45 min.</li>
-<li>When the OD600 of one of the cultures reaches 0.55, transfer the culture vessel to an ice-water bath for 10 min. Discard the two other cultures.</li>
-<li>
-Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.
-</li>
-<li>
-Pour off the medium and store the open centrifuge bottle on a stack of paper towels for 2 min.
-</li>
-<li>
-Resuspend the cells very gently in 80 mL of ice-cold ITB by swirling.
-</li>
-<li>Harvest the cells by centrifugation at 2500g for 10 min at 4˚C.</li>
-<li>Pour off the medium and store the open centrifuge tube on a stack of paper towels for 2 min. Use a vacuum aspirator to remove any drops of remaining medium adhering to the walls of the centrifuge tube or trapped in its neck.</li>
-</ul>
-<br/>
-Freezing of Competent Cells
+          <ul className="protocol-list">
+            <li>
+              Wash the membrane twice for 5 minutes with deionized water to
+              remove gel and transfer buffer components and weakly bound
+              proteins.
+            </li>
+            <li>
+              Incubate the membrane in a blocking solution for 30 minutes to 2
+              hours at room temperature with gentle agitation.
+            </li>
+            <li>Rinse the membrane with PBS twice for 5 minutes.</li>
+            <li>
+              Dilute the primary antibody in blocking solution to a
+              concentration between 1 µg/ml and 50 µg/ml. Incubate for a minimum
+              of 1 hour at room temperature or overnight at 4°C with gentle
+              agitation.
+            </li>
+            <li>
+              Wash the membrane for 5 minutes with PBS. Repeat the wash 3 times.
+            </li>
+            <li>
+              Prepare a dilution of the secondary antibody in blocking solution.
+              The concentration should be between 0.5 to 5 µg/ml. Incubate the
+              membrane in the secondary antibody solution for 1 hour at room
+              temperature.
+            </li>
+            <li>Wash the membrane for 5 minutes with PBS. Repeat 3 times.</li>
+            <li>
+              Drain the reagent and blot the membrane on a clean piece of paper
+              towel.
+            </li>
+          </ul>
+          <br />
+          <ol className="protocol-list-num" start={4}>
+            <li>Visualization of Target Protein</li>
+          </ol>
 
-<ul className="protocol-list">
-<li>  Resuspend the cells gently in 20 mL of ice-cold Inoue transformation buffer.</li>
-<li>Add 1.5 mL of DMSO. Mix the bacterial suspension by swirling and then store it in ice for 10 min.
-</li>
-<li>Working quickly, dispense aliquots of the suspensions into chilled, sterile microcentrifuge tubes. Immediately snap-freeze the competent cells by immersing the tightly closed tubes in a bath of liquid nitrogen. Store the tubes at −80˚C until needed.
-</li>
-<li>Check the competency by transformation.</li>
-</ul>
+          <ul className="protocol-list">
+            <li>
+              Carefully remove the membrane from the detection reagent and
+              sandwich it between layers of plastic.
+            </li>
+            <li>
+              Expose the membrane to autoradiography film in a dark room or
+              image with a chemiluminescent imaging system, such as a ChemiDoc.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </div>
-</div>
-<br></br>
-<h2 className="secondary-heading">Transformation</h2>
-    <p>
-    Transformation is a molecular biology process where foreign DNA is introduced into a host organism, typically a bacterium, altering its genetic makeup. This technique is essential for genetic engineering and the creation of genetically modified organisms.
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab16" />
-  <label className="accordion-label" htmlFor="tab16">B.subtilis 168</label>
-  <div className="accordion-content">
-  Day 1
-  <br/><ul className="protocol-list">
-<li> Streak out host cells on appropriate selective media for single colonies.</li></ul>
-<br/>
-Day 2<br/>
-<ul className="protocol-list">
-<li>Use a single colony to inoculate 1 mL of 1X MC:</li>
-</ul>
-<div className="equations">
-    <p>900 μL ddH20</p>
-    <p>100 μL 10X MC</p>
-    <p>3 μL 1M MgSO4</p>
-    <p>4 μL 10 mg/mL Tryptophan</p>
-    </div>
-<ul className="protocol-list">
-<li>Incubate at 37°C with shaking (250 rpm) for 4-5 hours.</li>
-<li>
-Aliquot 200 μL of cells and add 2 μL of plasmid (~50 ng/μL) into it. Incubate at 37°C with shaking (250 rpm) for 1.5-2 hours.</li>
-<li>
-Plate the entire volume on appropriate selective media and incubate the plate at 37°C</li></ul><br/>
-10X MC for total volume = 10 ml
-<br/>
-<table>
-  <thead>
-    <tr>
-      <th>Components</th>
-      <th>Amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>K2HPO4</td>
-      <td>10.7 g</td>
-    </tr>
-    <tr>
-      <td>KH2PO4</td>
-      <td>5.2 g</td>
-    </tr>
-    <tr>
-      <td>Glucose</td>
-      <td>20 g</td>
-    </tr>
-    <tr>
-      <td>Sodium citrate dihydrate</td>
-      <td>0.88 g</td>
-    </tr>
-    <tr>
-      <td>1000X Ferric ammonium citrate (2.2%)</td>
-      <td>1 mL</td>
-    </tr>
-    <tr>
-      <td>Casein hydrolysate (Oxoid)</td>
-      <td>1 g</td>
-    </tr>
-    <tr>
-      <td>Potassium glutamate monohydrate</td>
-      <td>2.2 g</td>
-    </tr>
-  </tbody>
-</table>
-<br/>
-Mix everything using half the final volume of water. Once everything is dissolved, adjust to the appropriate final volume. Filter sterilize, aliquot and store at -20°C.
-
-   
-  </div>
-</div>
-<div className="accordion">
-  <input type="checkbox" id="tab17" />
-  <label className="accordion-label" htmlFor="tab17">E. coli</label>
-  <div className="accordion-content">
-  <ul className="protocol-list">
-<li>Thaw 100 ul competent cells on ice for about 10 minutes. </li>
-<li>
-Add 5 ul of ligated product to one of the micro-centrifuge of competent cells and only plasmid to the other micro-centrifuge of competent cells as a control and mix by flickering.
-
-</li>
-<li>
-Incubate the mixture in ice for about 30 minutes. 
-</li>
-<li>
-Give the mixture a heat shock at 42°C for 90 seconds in a water bath.
-</li>
-<li>
-Place the mixture in ice again for about 5 minutes for its recovery.
-</li>
-<li>
-Add some volume of LB broth media to the mixture such that the total volume is 1 ml. 
-</li>
-<li>
-Incubate it at 37°C with shaking at 200 rpm for about an hour.
-</li>
-<li>
-Centrifuge the mixture at 3000 rpm for 5 minutes.
-</li>
-<li>
-Discard 900 ul of it and resuspend the rest 100 ul using pipette.
-</li>
-<li>
-Spread the resuspended product on agar plates with and without selection media. 
-</li>
-<li>
-Incubate it at 37°C overnight.
-</li>
-</ul>
-
-   
-  </div>
-</div>
-<br/>
-<h2 className="secondary-heading">Protein Purification (his-tag)</h2>
-    <p>
-    Description to be added.
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab18" />
-  <label className="accordion-label" htmlFor="tab18">Protocol</label>
-  <div className="accordion-content">
-  <ul className="protocol-list">
-<li>Pellet the cells in a 50 ml Falcon tube. </li>
-<li>
-Add 20 ml of lysis buffer to suspend the pellet and sonicate (time = 4 min, amplitude = 30%, pulse on = 30 sec, pulse-off = 30 sec).
-
-</li>
-<li>
-Centrifuge at 10,000 rpm at 4°C. 
-</li>
-<li>
-Separate the pellet and supernatant. Take 20 ul of the supernatant to a fresh tube. This will be a total soluble protein labeled as “T”.
-
-</li>
-<li>
-Pipette 1 ml of lysate onto the Ni-NTA resin in the 15 ml tube. Put on the cap and keep it in ice for 1 hr. 
-
-</li>
-<li>
-Aspirate the 20% ethanol in Ni-NTA agarose, and wash Ni-NTA agarose repeatedly with PBSbuffer(1×).
-
-</li>
-
-</ul>
-</div>
-</div>
-<br/>
-<h2 className="secondary-heading">SDS-Page</h2>
-    <p>
-    SDS-PAGE (Sodium Dodecyl Sulfate-Polyacrylamide Gel Electrophoresis) is a widely used laboratory technique for separating proteins based on their molecular weight. In this method, proteins are denatured with SDS and then separated in a polyacrylamide gel under the influence of an electric field. The resulting protein bands can be visualized, allowing for protein analysis, quantification, and purity assessment. 
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab19" />
-  <label className="accordion-label" htmlFor="tab19">Protocol</label>
-  <div className="accordion-content">
-  <table>
-  <thead>
-    <tr>
-      <th>Components</th>
-      <th>Stacking gel (4%)</th>
-      <th>Resolving gel (12%)</th>
-      <th>Resolving gel (10%)</th>
-      <th>Resolving gel (16%)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>30% Acrylamide/bis solution</td>
-      <td>1.98 ml</td>
-      <td>6.0 ml</td>
-      <td>3.34 ml</td>
-      <td>5.334 ml</td>
-    </tr>
-    <tr>
-      <td>0.5 M Tris HCl, pH 6.8</td>
-      <td>3.78 ml</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>1.5 M Tris HCl, pH 8.8</td>
-      <td>-</td>
-      <td>3.75 ml</td>
-      <td>2.5 ml</td>
-      <td>2.5 ml</td>
-    </tr>
-    <tr>
-      <td>10% SDS</td>
-      <td>150 ul</td>
-      <td>150 ul</td>
-      <td>100 ul</td>
-      <td>100 ul</td>
-    </tr>
-    <tr>
-      <td>Distilled water</td>
-      <td>9 ml</td>
-      <td>5.03 ml</td>
-      <td>4 ml</td>
-      <td>2 ml</td>
-    </tr>
-    <tr>
-      <td>TEMED</td>
-      <td>15 ul</td>
-      <td>7.5 ul</td>
-      <td>5 ul</td>
-      <td>5 ul</td>
-    </tr>
-    <tr>
-      <td>10% APS</td>
-      <td>75 ul</td>
-      <td>75 ul</td>
-      <td>50 ul</td>
-      <td>50 ul</td>
-    </tr>
-    <tr>
-      <td>Total Volume</td>
-      <td>15 ml</td>
-      <td>15 ml</td>
-      <td>10 ml</td>
-      <td>10 ml</td>
-    </tr>
-  </tbody>
-</table>
-<br/>
-<strong>Running buffer:</strong><br/>
-25 mM Tris<br/>
-250 mM glycine (pH=8.3)<br/>
- 0.1% SDS<br/>
- <br/>
- ASSEMBLE AND PREPARATION OF GEL 
- <br/>
-  <ul className="protocol-list">
-<li>Locate glass plates, 1 mm spacers, plate holders and mount, tank, electrodes and power supply. </li>
-<li>
-Assemble casting cell using glass plates, spacers and plate holder. 
-
-</li>
-<li>
-Prepare resolving gel based on protein size either 10%,12% or 16% mixture in a falcon tube. 
-</li>
-<li>
-Pipette 4.5 ml of gel mixture into each casting cell (between glass plates, 1 mm spacer). 
-</li>
-<li>
-Carefully layer 100 ul of H2O on top of gel to prevent drying. 
-
-</li>
-<li>
-Allow 20 min for the gel to harden.
-</li>
-<li>Remove the layer of liquid on top of the gel.</li>
-<li>Prepare stacking gel mixture.</li>
-<li>Pipette 2 ml of stacking gel mixture on top of the resolving gel in the casting cell.</li>
-<li>Insert plastic combs to form sample wells.</li>
-<li>Allow 20 min for stacking gel to harden.</li>
-<li>Remove gel and holder from casting cell and mount onto electrode assembly.</li>
-<li>Inset electrode assembly into tank. </li>
-<li>Remove combs and fill the tank with a 500 ml tank buffer.
-</li>
-</ul>
-<br/>
-SAMPLE PREPARATION AND ELECTROPHORESIS<br/>
-<ul className="protocol-list">
-    <li>Take your protein sample.</li>
-    <li>Add 15 ul of sample buffer to the tube.</li>
-    <li>Keep the tubes on a heating block at 50°C for 5 min.</li>
-    <li>Again centrifuge the tubes. </li>
-    <li>Take 40 ul of supernatant and load onto the sample well using gel loading pipette tips. </li>
-    <li>Also load 10 ul of protein ladder. </li>
-    <li>Connect the power supply to a gel electrode and apply voltage (70-100mV, 30 milliAmps).
-</li>
-<li>Continue electrophoresis until the tracking dye moves to the bottom of the gel.</li>
-<li>Turn off voltage and remove gel from the tank. </li>
-<li>Stain gel with Coomassie blue and destain gel using H2O or destaining solution to visualize protein bands.</li>
-</ul>
-</div>
-</div>
-<br/>
-<h2 className="secondary-heading">BACILLUS GENOME INTEGRATION PROTOCOL-STARCH HYDROLYSIS TEST</h2>
-    <p>
-    Genome integration test of Bacillus through starch test involves the assessment of amylase activity. Bacillus strains with integrated amylase genes can break down starch into simpler sugars, forming clear zones around colonies on starch agar plates. This assay confirms successful genomic integration, indicating the presence and functionality of the introduced gene in the bacterial genome.
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab20" />
-  <label className="accordion-label" htmlFor="tab20">Protocol</label>
-  <div className="accordion-content">
-  
-  <ul className="protocol-list">
-<li>Divide the Starch agar plate into four quadrants for four different inoculations. </li>
-<li>
-Use a fresh (16- to 18-hour) pure culture of test bacteria as an inoculation source and streak on starch agar plate.
-
-</li>
-<li>
-Incubate plates for 24 to 48 hours at 37°C in an incubator.
-
-</li></ul>
-<br/>
-STARCH HYDROLYSIS TEST<br/>
-<ul className="protocol-list">
-<li>
-After proper incubation, flood the surface of the agar with Gram’s iodine solution. 
-</li>
-<li>
-Record results immediately as the blue-black color formed with starch may fade. 
-
-</li>
-<li>
-When iodine solution is added to a solution containing starch, it forms a blue-black complex with the starch molecules, producing a deep blue-black color. This indicates the presence of starch, thus absence of amylase. 
-</li>
-<li>Appearance of faded color shows absence of starch, thus presence of amylase. 
-</li>
-<li>Therefore, deep blue/black color shows positive colonies for genome integration in Bacillus subtilis 168.  </li></ul>
-
-</div>
-</div>
-<br/>
-<h2 className="secondary-heading">Western Blotting</h2>
-    <p>
-    Western blotting is used to detect and analyze specific proteins within a complex mixture. It involves separating proteins by electrophoresis, transferring them to a membrane, and then using antibodies to identify and visualize the target protein.
-
-
-    </p>
-    <div className="accordion">
-  <input type="checkbox" id="tab21" />
-  <label className="accordion-label" htmlFor="tab21">Protocol</label>
-  <div className="accordion-content">
-  <ol className="protocol-list-num">
-    <li>
-        <strong>Gel Electrophoresis:
-</strong>
-    </li>
-  </ol>
-  <ul className="protocol-list">
-<li>Run an SDS-PAGE to separate the proteins on a gel.</li></ul>
-<br/>
-<ol className="protocol-list-num" start={2}>
-    <li>Protein Transfer:</li>
-</ol>
-<ul className="protocol-list">
-    <li>
-    Cut a sheet of nitrocellulose paper and 6 sheets of absorbent filter paper to the exact size of the SDS-PAGE gel.
-    </li>
-    <li>
-    Pre-wet the nitrocellulose membrane in deionized water. Wear gloves when handling the membrane.
-    </li>
-    <li>
-    Soak the gel, nitrocellulose membrane, and absorbent papers in a transfer buffer for 5 minutes.
-
-    </li>
-      <li>
-      Apply the membrane to the surface of the gel. Remove any air bubbles by rolling a pipette across the membrane.
-
-      </li>
-      <li>Sandwich the gel, blotting membrane and absorbent papers as follows: bottom plate (cathode) - 3 sheets of absorbent paper – gel – membrane  – 3 sheets of absorbent paper – top plate (anode). Verify the orientation of the gel and membrane to ensure that the proteins migrate in the correct direction; the membrane should be above the gel, facing the positive electrode.</li>
-      <li>Connect the electrodes. Run the transfer for 45 minutes to 1.5 hours with a current of 0.8 mA/cm2.</li>
-      <li>Disconnect the power supply. Remove and disassemble the sandwich, removing the nitrocellulose membrane. A corner may be snipped off in order to retain the orientation of the membrane.</li>
-
-</ul>
-<br/>
-<ol className="protocol-list-num" start={3}>
-    <li>
-    Detection of Target Protein
-    </li>
-</ol>
-
-
-<ul className="protocol-list">
-<li>
-Wash the membrane twice for 5 minutes with deionized water to remove gel and transfer buffer components and weakly bound proteins.
-
-</li>
-<li>
-Incubate the membrane in a blocking solution for 30 minutes to 2 hours at room temperature with gentle agitation.
-
-
-</li>
-<li>Rinse the membrane with PBS twice for 5 minutes. 
-</li>
-<li>
-Dilute the primary antibody in blocking solution to a concentration between 1 µg/ml and 50 µg/ml. Incubate for a minimum of 1 hour at room temperature or overnight at 4°C with gentle agitation.
-</li>
-<li>Wash the membrane for 5 minutes with PBS. Repeat the wash 3 times.</li>
-<li>Prepare a dilution of the secondary antibody in blocking solution. The concentration should be between 0.5 to 5 µg/ml. Incubate the membrane in the secondary antibody solution for 1 hour at room temperature.</li>
-<li>
-Wash the membrane for 5 minutes with PBS. Repeat 3 times.
-</li>
-<li>
-Drain the reagent and blot the membrane on a clean piece of paper towel.
-</li>
-</ul>
-<br/>
-<ol className="protocol-list-num" start={4}>
-    <li>Visualization of Target Protein</li>
-</ol>
-
-<ul className="protocol-list">
-<li>
-Carefully remove the membrane from the detection reagent and sandwich it between layers of plastic.
-
-</li>
-<li>
-Expose the membrane to autoradiography film in a dark room or image with a chemiluminescent imaging system, such as a ChemiDoc. 
-
-</li>
-</ul>
-
-</div>
-</div>
-</main>
-    
-</div>);
+);
 
 export default Experiments;
