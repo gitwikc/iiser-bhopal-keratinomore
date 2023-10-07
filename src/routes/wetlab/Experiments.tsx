@@ -1812,6 +1812,6 @@ Expose the membrane to autoradiography film in a dark room or image with a chemi
 </div>
 </main>
     
-</div>;
+</div>);
 
 export default Experiments;
