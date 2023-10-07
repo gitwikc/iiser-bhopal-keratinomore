@@ -14,6 +14,7 @@ import HomeNav from "./components/layout/HomeNav";
 import { useEffect } from "react";
 import BackToTopButton from "./components/ui/BackToTopButton";
 import Sustainable from "./routes/humanPractices/Sustainable";
+import Experiments from "./routes/wetlab/Experiments";
 
 const App = () => {
   const location = useLocation();
@@ -58,7 +59,8 @@ const App = () => {
         {/* Special Prizes */}
         <Route path="/education" element={<Education />} />
         <Route path="/model" element={<Model />} />
-
+        {/* Wetlab */}
+        <Route path="/experiments" element={<Experiments />} />
         {/* 404 */}
         <Route path="/error" element={<Error />} />
       </Routes>
