@@ -9,7 +9,10 @@ const Home = () => {
   return (
     <div className="Home">
       <section className="brand">
-        <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
+        <img
+          className="-translate-y-20"
+          src="https://static.igem.wiki/teams/4958/wiki/homepage/banner.png"
+        />
       </section>
 
       {/* Problem statement story */}
@@ -29,11 +32,7 @@ const Home = () => {
         color={ColorName.SECONDARY}
         layout={ProblemLayout.GRAPHIC_LEFT}
         graphic={<GiSandsOfTime size={192} />}
-        content={
-          <>
-            <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
-          </>
-        }
+        content={<>{/* <img src="./IMG-0517.png" />/ */}</>}
       />
 
       <section className="w-screen flex gap-4 justify-evenly">

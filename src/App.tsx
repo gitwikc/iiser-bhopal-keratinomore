@@ -41,7 +41,7 @@ const App = () => {
     <>
       <BackToTopButton />
       <Routes>
-        <Route path="/" element={<HomeNav />} />
+        <Route path="/" element={<Navbar />} />
         <Route path="*" element={<Navbar />} />
       </Routes>
       {/* <Navbar /> */}
