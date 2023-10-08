@@ -1,5 +1,6 @@
 import "./Experiments.css";
 import HeroSection from "../../components/layout/HeroSection";
+import {Sidebar} from "../../components/layout/sidebar.tsx";
 
 const Experiments = () => (
   <div className="Experiments">
@@ -10,6 +11,16 @@ const Experiments = () => (
         </>
       }
     />
+    <Sidebar width={160} height={"100vh"}>
+    <div className="sidebar">
+        <h2 className="toc-heading">Protocols</h2>
+        <ul className="toc-list">
+            <li className="toc-item"><a href="#section1">Section 1</a></li>
+            <li className="toc-item"><a href="#section2">Section 2</a></li>
+            <li className="toc-item"><a href="#section3">Section 3</a></li>
+        </ul>
+    </div>
+    </Sidebar>
     <main className="main-body">
       <h1 className="main-heading">Protocols</h1>
       <h2 className="secondary-heading">Liquid Growth media</h2>
