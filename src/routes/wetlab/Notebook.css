@@ -1,0 +1,94 @@
+@import "/src/index.css";
+
+.background-image {
+    background-image: url('https://static.igem.wiki/teams/4958/wiki/wet-lab-notebook-1.png');
+    
+    background-size: cover;
+    height: 100%;
+    min-height: 1200px;
+    z-index: -1;
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+    justify-content: space-around;
+    
+}
+
+.left-elements {
+    padding-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18em;
+}
+
+.right-elements {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18em;
+}
+.button-calender {
+
+
+}
+.calender {
+    background-color: #8997F3;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.calender:hover {
+    background-color: #56D087;
+   }
+   
+   .calender:active {
+     box-shadow: 0 0 2px darkslategray;
+     transform: translateY(2px);
+   }
+
+
+.round-6 {
+    background-color: #fec9ff;
+    color: #5363a8;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 60px;
+    width: 180px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+ .round-6:hover {
+   background-color: #8997F3;
+  }
+  
+  .round-6:active {
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
+  
+  
+  .round-6 {
+    border-radius: 15%;
+    margin-bottom: 0px;
+  }
+  
+  
+
