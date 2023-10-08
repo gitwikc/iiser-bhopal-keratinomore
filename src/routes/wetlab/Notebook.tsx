@@ -1,4 +1,3 @@
-div
 import HeroSection from "../../components/layout/HeroSection";
 import "./Notebook.css";
 
