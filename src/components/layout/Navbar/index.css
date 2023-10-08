@@ -2,34 +2,39 @@
 
 @layer components {
   .Navbar {
-    @apply fixed flex items-center w-full bg-dark 
-    bg-opacity-90 backdrop-blur-md shadow-md z-[999];
+    @apply fixed flex gap-4 items-center w-full bg-light
+    bg-opacity-70 backdrop-blur-md border-b-[1px] border-b-slate-300 z-[999];
+
+    .brand_icon {
+      @apply pl-12 pr-8 text-primary-1 grid place-items-center hover:scale-110 transition-all duration-150;
+    }
 
     .nav_links {
       @apply flex-1 flex items-center justify-evenly text-sm;
     }
 
     .NavItem {
-      @apply relative flex items-center gap-2 text-light py-4 px-3
+      @apply relative flex items-center gap-2 text-dark py-4 px-3
       w-full h-full
       cursor-pointer hover:text-primary-2;
 
       ul.dropdown {
-        @apply absolute top-14 bg-dark text-light rounded-lg
-        flex flex-col text-sm z-[999] overflow-hidden w-48
-        bg-opacity-90 backdrop-blur-xl shadow-md
+        @apply absolute top-16 bg-light text-dark rounded-lg
+        flex flex-col text-sm z-[999] overflow-hidden w-64
+        bg-opacity-80 border-[1px] border-slate-300
         transition-all duration-300 opacity-0;
 
         &.active {
           @apply opacity-100;
 
           li {
-            @apply h-auto;
+            @apply h-auto hover:border-l-secondary;
           }
         }
 
         li {
-          @apply flex justify-center items-center h-0;
+          @apply flex justify-center items-center h-0
+          border-l-4 border-l-transparent transition-all duration-300 bg-opacity-30 backdrop-blur-lg;
 
           a {
             @apply px-3 py-4 w-full h-full overflow-hidden

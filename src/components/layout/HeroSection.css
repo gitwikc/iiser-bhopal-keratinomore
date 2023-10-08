@@ -36,6 +36,10 @@
       @apply text-transparent;
     }
 
+    .waves {
+      @apply scale-y-125 brightness-90 saturate-150;
+    }
+
     .mixer-gradient {
       @apply absolute w-full h-28 bg-gradient-to-b from-transparent to-light bottom-0;
     }
@@ -81,4 +85,5 @@
 
 .brand .content span:not(:nth-child(1)) {
   margin-top: -5rem;
+  text-align: center;
 }

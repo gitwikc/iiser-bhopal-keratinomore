@@ -229,7 +229,7 @@
   }
 
   ::-webkit-scrollbar {
-    @apply w-[12px] shadow-none bg-transparent;
+    @apply w-[10px] shadow-none bg-transparent;
   }
 
   ::-webkit-scrollbar-track {

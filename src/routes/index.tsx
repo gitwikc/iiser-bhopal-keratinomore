@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="Home">
-      <section className="brand"></section>
+      <section className="brand">
+        <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
+      </section>
 
       {/* Problem statement story */}
       <Problem
@@ -22,6 +24,16 @@ const Home = () => {
         layout={ProblemLayout.GRAPHIC_LEFT}
         graphic={<GiSandsOfTime size={192} />}
         content={<>Coming Soon</>}
+      />
+      <Problem
+        color={ColorName.SECONDARY}
+        layout={ProblemLayout.GRAPHIC_LEFT}
+        graphic={<GiSandsOfTime size={192} />}
+        content={
+          <>
+            <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
+          </>
+        }
       />
 
       <section className="w-screen flex gap-4 justify-evenly">
