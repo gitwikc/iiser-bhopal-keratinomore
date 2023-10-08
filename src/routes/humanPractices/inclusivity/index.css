@@ -1,0 +1,14 @@
+@import "/src/index.css";
+
+@layer components {
+  .references > ol {
+    @apply list-none flex flex-col gap-2;
+
+    li > a {
+      @apply text-primary-1
+      hover:bg-primary-1 hover:text-light
+      p-2 rounded-sm
+      transition-all duration-150;
+    }
+  }
+}

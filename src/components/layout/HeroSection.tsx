@@ -57,40 +57,42 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title }) => {
         </motion.div>
       </section>
 
-      <Wave
-        fill={PALLETE[ColorName.PRIMARY1]}
-        className="absolute bottom-0 opacity-40"
-        paused={false}
-        options={{
-          height: 20,
-          amplitude: 20,
-          speed: 0.2,
-          points: 6,
-        }}
-      />
-      <Wave
-        fill={PALLETE[ColorName.PRIMARY2]}
-        className="absolute bottom-0 opacity-50"
-        paused={false}
-        options={{
-          height: 60,
-          amplitude: 20,
-          speed: 0.25,
-          points: 5,
-        }}
-      />
-      <Wave
-        fill={PALLETE[ColorName.PRIMARY2]}
-        className="absolute light bottom-0 opacity-100"
-        paused={false}
-        options={{
-          height: 50,
-          amplitude: 60,
-          speed: 0.15,
-          points: 3,
-        }}
-      />
-      <div className="mixer-gradient"></div>
+      <section className="waves w-full brightness-80">
+        <Wave
+          fill={PALLETE[ColorName.PRIMARY1]}
+          className="absolute bottom-0 opacity-50"
+          paused={false}
+          options={{
+            height: 20,
+            amplitude: 20,
+            speed: 0.2,
+            points: 6,
+          }}
+        />
+        <Wave
+          fill={PALLETE[ColorName.PRIMARY2]}
+          className="absolute bottom-0 opacity-60"
+          paused={false}
+          options={{
+            height: 60,
+            amplitude: 20,
+            speed: 0.25,
+            points: 5,
+          }}
+        />
+        <Wave
+          fill={PALLETE[ColorName.PRIMARY2]}
+          className="absolute light bottom-0 opacity-100"
+          paused={false}
+          options={{
+            height: 50,
+            amplitude: 60,
+            speed: 0.15,
+            points: 3,
+          }}
+        />
+      </section>
+      <div className="mixer-gradient opacity-100"></div>
     </div>
   );
 };

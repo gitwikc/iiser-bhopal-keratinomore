@@ -1,9 +1,20 @@
 import * as React from "react";
 import NavItem from "./NavItem";
 
-import { BsAndroid, BsBagCheckFill } from "react-icons/bs";
+import {
+  SiAlchemy,
+  SiInfluxdb,
+  SiInformatica,
+  SiMicrogenetics,
+  SiOpenproject,
+  SiProgress,
+} from "react-icons/si";
 
 import "./index.css";
+import { GiFrayedArrow } from "react-icons/gi";
+
+import { AiOutlineHeatMap } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 type NavbarProps = {};
 
@@ -11,11 +22,13 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <nav className="Navbar">
       <div className="brand_icon">
-        <BsAndroid size={32} />
+        <Link replace to={"/"}>
+          <GiFrayedArrow size={32} />
+        </Link>
       </div>
       <div className="nav_links">
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiProgress size={28} />}
           title="Team"
           links={[
             { title: "Members", href: "/members" },
@@ -24,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiOpenproject size={28} />}
           title="Project"
           links={[
             { title: "Description", href: "/description" },
@@ -37,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiAlchemy size={28} />}
           title="Wet Lab"
           links={[
             { title: "Notebook", href: "/notebook" },
@@ -47,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiMicrogenetics size={28} />}
           title="Parts"
           links={[
             { title: "Basic", href: "/basic" },
@@ -57,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiInfluxdb size={28} />}
           title="Dry Lab"
           links={[
             { title: "Kill Switch Modelling", href: "/modelling" },
@@ -67,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<AiOutlineHeatMap size={28} />}
           title="Human Practices"
           links={[
             { title: "Integrated Human Practices", href: "/human-practices" },
@@ -78,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           ]}
         />
         <NavItem
-          icon={<BsBagCheckFill size={28} />}
+          icon={<SiInformatica size={28} />}
           title="Implementation"
           links={[
             { title: "Hardware", href: "/hardware" },
