@@ -2,6 +2,7 @@ import "./index.css";
 import Problem, { ProblemLayout } from "../components/layout/Problem";
 import { ColorName } from "../data/colors";
 import { GiChicken, GiSandsOfTime } from "react-icons/gi";
+import Banner from "../../banner.gif";
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <div className="Home">
       <section className="brand">
-        <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
+        <img className="-translate-y-20" src={Banner} />
       </section>
 
       {/* Problem statement story */}
@@ -31,7 +32,7 @@ const Home = () => {
         graphic={<GiSandsOfTime size={192} />}
         content={
           <>
-            <img src="https://static.igem.wiki/teams/4958/wiki/homepage/feather-animation.gif " />
+            <img src="./IMG-0517.png" />
           </>
         }
       />
