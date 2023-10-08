@@ -104,3 +104,16 @@ th {
   align-items: center;
   color: #2C3144;
 }
+
+/*
+Sidebar style
+
+*/
+.toc-heading {
+    font-size: 24px;
+    color: #6267F1;
+}
+.toc-item {
+    font-size: 18px;
+    color: #56D087;
+}
