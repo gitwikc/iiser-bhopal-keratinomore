@@ -5,8 +5,32 @@
     @apply flex flex-col w-screen;
   }
 
-  
-
   /* Problem statement  */
 }
 
+.Home > section.brand {
+  background: linear-gradient(
+    to right,
+    theme("colors.primary-1"),
+    theme("colors.primary-2"),
+    theme("colors.secondary"),
+    theme("colors.secondary"),
+    theme("colors.primary-2"),
+    theme("colors.primary-1")
+  );
+  background-size: 200%;
+  /* background-clip: text; */
+  animation-name: sideside;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+}
+
+@keyframes sideside {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

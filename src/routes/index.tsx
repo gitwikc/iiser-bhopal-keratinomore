@@ -2,7 +2,6 @@ import "./index.css";
 import Problem, { ProblemLayout } from "../components/layout/Problem";
 import { ColorName } from "../data/colors";
 import { GiChicken, GiSandsOfTime } from "react-icons/gi";
-import Banner from "../../banner.gif";
 
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,10 @@ const Home = () => {
   return (
     <div className="Home">
       <section className="brand">
-        <img className="-translate-y-20" src={Banner} />
+        <img
+          className="-translate-y-20"
+          src="https://static.igem.wiki/teams/4958/wiki/homepage/banner.png"
+        />
       </section>
 
       {/* Problem statement story */}
@@ -30,11 +32,7 @@ const Home = () => {
         color={ColorName.SECONDARY}
         layout={ProblemLayout.GRAPHIC_LEFT}
         graphic={<GiSandsOfTime size={192} />}
-        content={
-          <>
-            <img src="./IMG-0517.png" />
-          </>
-        }
+        content={<>{/* <img src="./IMG-0517.png" />/ */}</>}
       />
 
       <section className="w-screen flex gap-4 justify-evenly">
