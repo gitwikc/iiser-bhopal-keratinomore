@@ -1,9 +1,0 @@
-@import "/src/index.css";
-
-@layer components {
-  .HumanPractices {
-    main {
-      @apply px-64;
-    }
-  }
-}

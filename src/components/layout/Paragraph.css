@@ -11,24 +11,12 @@
     }
 
     & > .content {
-      @apply font-medium text-dark text-justify;
+      @apply font-normal text-dark text-justify;
     }
 
     & p {
       @apply mb-3;
     }
-
-    /* &[data-hierarchy="0"] {
-      @apply border-l-primary-1 border-opacity-20 hover:border-opacity-100;
-    }
-
-    &[data-hierarchy="1"] {
-      @apply border-l-primary-2 border-opacity-20 hover:border-opacity-80;
-    }
-
-    &[data-hierarchy="2"] {
-      @apply border-l-secondary border-opacity-20 hover:border-opacity-80;
-    } */
   }
 }
 

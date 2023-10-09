@@ -27,9 +27,10 @@
     }
 
     .brand .content {
-      @apply -mt-32 px-24 flex flex-col gap-0 text-[9rem] font-serif font-black
-    cursor-pointer
-    duration-500 hover:scale-[1.02];
+      @apply -mt-32 px-24 flex flex-col gap-0 text-[9rem]
+      font-serif font-extrabold
+      cursor-pointer
+      duration-500 hover:scale-[1.02];
     }
 
     .brand .content span {

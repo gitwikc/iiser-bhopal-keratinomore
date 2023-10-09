@@ -5,21 +5,17 @@ import Attributions from "./routes/team/Attributions";
 import Contribution from "./routes/Contribution";
 import Description from "./routes/project/Description";
 import Engineering from "./routes/project/Engineering";
-import HumanPractices from "./routes/humanPractices/HumanPractices";
 import Education from "./routes/humanPractices/Education";
 import Model from "./routes/specialPrize/Model";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import HomeNav from "./components/layout/HomeNav";
 import { useEffect } from "react";
 import BackToTopButton from "./components/ui/BackToTopButton";
 import Sustainable from "./routes/humanPractices/Sustainable";
 import Experiments from "./routes/wetlab/Experiments";
-<<<<<<< HEAD
-import Notebook from "./routes/wetlab/notebook";
-=======
+import Notebook from "./routes/wetlab/Notebook";
 import Inclusivity from "./routes/humanPractices/inclusivity";
->>>>>>> b6cb43c6ae2360d45a5d0c4989d02127ebc88308
+import Integrated from "./routes/humanPractices/ihp";
 
 const App = () => {
   const location = useLocation();
@@ -58,7 +54,7 @@ const App = () => {
         <Route path="/contribution" element={<Contribution />} />
         <Route path="/description" element={<Description />} />
         <Route path="/engineering" element={<Engineering />} />
-        <Route path="/human-practices" element={<HumanPractices />} />
+        <Route path="/human-practices" element={<Integrated />} />
         <Route path="/sustainable" element={<Sustainable />} />
 
         {/* Special Prizes */}

@@ -10,7 +10,7 @@ const Home = () => {
     <div className="Home">
       <section className="brand">
         <img
-          className="-translate-y-20"
+          className="-translate-y-20 saturate-0"
           src="https://static.igem.wiki/teams/4958/wiki/homepage/banner.png"
         />
       </section>

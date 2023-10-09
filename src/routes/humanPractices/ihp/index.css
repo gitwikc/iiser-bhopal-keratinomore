@@ -1,0 +1,7 @@
+@import "/src/index.css";
+
+@layer components {
+  main {
+    @apply px-64 flex flex-col gap-12;
+  }
+}
