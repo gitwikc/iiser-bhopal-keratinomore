@@ -1,6 +1,16 @@
 import {Sidebar} from "../../components/layout/sidebar";
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
 const Model = () => <div className="Model">
+  {/* <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>Inline Math: <InlineMath math="c = \sqrt{a^2 + b^2}" /></p>
+      <p>Block Math:</p>
+      <BlockMath math="f(x) = \int_{-\infty}^{\infty} e^{-x^2} dx" /> */}
     <Sidebar width={300} height={"100vh"}>
     <div className="sidebar-section">
       <ul>
