@@ -25,22 +25,22 @@
 }
 
 .left-elements {
-    padding-top: 120px;
+    padding-top: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 18em;
+    gap: 14em;
     
 }
 
 .right-elements {
-    padding-top: 40px;
+    padding-top: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 18em;
+    gap: 14em;
 }
 .button-calender {
 

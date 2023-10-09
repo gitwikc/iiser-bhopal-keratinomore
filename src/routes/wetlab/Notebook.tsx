@@ -18,8 +18,8 @@ const Notebook = () => (
         <div className="elements">
           <div className="left-column">
             <div className="left-elements">
-              <button className="round-6">May</button>
-              <button className="round-6">June</button>
+            <a href="https://static.igem.wiki/teams/4958/wiki/wetlab/notebook/igem-23-wet-lab-notebook-may-2023.pdf" target="_blank"><button className="round-6">May</button></a>
+            <a href="https://static.igem.wiki/teams/4958/wiki/wetlab/notebook/igem-23-wet-lab-notebook-june-2023.pdf" target="_blank"><button className="round-6">June</button></a>
               <button className="round-6">July</button>
             </div>
           </div>
