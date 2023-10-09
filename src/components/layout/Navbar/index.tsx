@@ -41,12 +41,13 @@ const Navbar: React.FC<NavbarProps> = () => {
           title="Project"
           links={[
             { title: "Description", href: "/description" },
-            { title: "Design", href: "/design" },
             { title: "Contribution", href: "/contribution" },
+            { title: "Design", href: "/design" },
             { title: "Engineering", href: "/engineering" },
             { title: "Results", href: "/results" },
             { title: "Safety", href: "/safety" },
-            { title: "Future Prospects", href: "/future" },
+            { title: "Proof of Concept", href: "/poc" },
+            { title: "Future Considerations", href: "/future" },
           ]}
         />
         <NavItem
@@ -56,18 +57,12 @@ const Navbar: React.FC<NavbarProps> = () => {
             { title: "Notebook", href: "/notebook" },
             { title: "Experiments", href: "/experiments" },
             { title: "Measurements", href: "/measurements" },
-            { title: "Proof of Concept", href: "/poc" },
           ]}
         />
         <NavItem
           icon={<SiMicrogenetics size={28} />}
-          title="Parts"
-          links={[
-            { title: "Basic", href: "/basic" },
-            { title: "Part Collections", href: "/collections" },
-            { title: "Composite Parts", href: "/composite-parts" },
-            { title: "Improved Parts", href: "/improved-parts" },
-          ]}
+          title={<Link to="/parts">Parts</Link>}
+          links={[]}
         />
         <NavItem
           icon={<SiInfluxdb size={28} />}

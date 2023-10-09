@@ -9,7 +9,7 @@
 
       button {
         @apply flex-grow text-primary-1 text-lg text-center
-          px-6 py-4 font-semibold border-b-4 border-b-transparent
+          px-6 py-4 font-semibold border-b-8 border-b-transparent
           hover:bg-primary-1 hover:bg-opacity-10
           transition-all duration-300;
 

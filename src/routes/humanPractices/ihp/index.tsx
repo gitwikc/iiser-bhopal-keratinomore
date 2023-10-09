@@ -7,6 +7,8 @@ import "./index.css";
 import Tabs from "../../../components/ui/Tabs";
 import Understanding from "./tabs/Understanding";
 import DesignExecution from "./tabs/DesignExecution";
+import Closing from "./tabs/Closing";
+import Spreading from "./tabs/Spreading";
 
 const Integrated: React.FC = () => {
   return (
@@ -84,11 +86,11 @@ const Integrated: React.FC = () => {
             },
             {
               name: "Closing the Loop",
-              element: <>Closing the Loop</>,
+              element: <Closing />,
             },
             {
               name: "Spreading Awareness",
-              element: <>Spreading Awareness</>,
+              element: <Spreading />,
             },
           ]}
         />

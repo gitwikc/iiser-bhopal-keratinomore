@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 type NavItemProps = {
   icon: React.ReactNode;
-  title: string;
+  title: React.ReactNode;
   links: {
     title: string;
     href: string;
@@ -16,7 +16,6 @@ const NavItem: React.FC<NavItemProps> = ({ icon, title, links }) => {
   return (
     <div
       className="NavItem"
-      id={title}
       onMouseOver={() => setShowDropdown(true)}
       onMouseLeave={() => {
         setShowDropdown(false);
@@ -25,13 +24,17 @@ const NavItem: React.FC<NavItemProps> = ({ icon, title, links }) => {
       <span className="icon">{icon}</span>
       <span className="text">{title}</span>
 
-      <ul className={`dropdown ${showDropdown && "active"}`}>
-        {links.map((link) => (
-          <li>
-            <Link to={link.href}>{link.title}</Link>
-          </li>
-        ))}
-      </ul>
+      {links.length > 0 && (
+        <ul className={`dropdown ${showDropdown && "active"}`}>
+          {links.map((link) => (
+            <li>
+              <Link className="transition-all duration-300" to={link.href}>
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };

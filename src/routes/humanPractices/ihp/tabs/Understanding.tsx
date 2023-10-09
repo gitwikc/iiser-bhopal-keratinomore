@@ -4,21 +4,28 @@ import Paragraph from "../../../../components/layout/Paragraph";
 const Understanding: React.FC = () => {
   return (
     <div className="Understanding">
-      <p className="text-dark">
-        We recognized the importance of conducting our surveys of chicken shop
-        owners with sensitivity and respect. We didn't want to come across as
-        intimidating, insensitive, or disrespectful. To navigate this challenge
-        effectively, we sought guidance from Dr. Renny Thomas, from the
-        Humanities and Social Sciences Department at IISER Bhopal. Dr. Thomas
-        emphasised the need to consider cultural nuances while formulating our
-        survey questions. He encouraged us to be mindful of the diverse
-        responses that different communities might have to our inquiries.
-        Additionally, he advised us to conduct the interviews in the local
-        language, creating a comfortable environment for the participants. This
-        approach not only facilitated our research but also helped us establish
-        meaningful connections with the chicken shop owners, fostering a
-        positive and cooperative atmosphere during our surveys.
-      </p>
+      <Paragraph
+        hierarchy={0}
+        title=""
+        content={
+          <>
+            We recognized the importance of conducting our surveys of chicken
+            shop owners with sensitivity and respect. We didn't want to come
+            across as intimidating, insensitive, or disrespectful. To navigate
+            this challenge effectively, we sought guidance from Dr. Renny
+            Thomas, from the Humanities and Social Sciences Department at IISER
+            Bhopal. Dr. Thomas emphasised the need to consider cultural nuances
+            while formulating our survey questions. He encouraged us to be
+            mindful of the diverse responses that different communities might
+            have to our inquiries. Additionally, he advised us to conduct the
+            interviews in the local language, creating a comfortable environment
+            for the participants. This approach not only facilitated our
+            research but also helped us establish meaningful connections with
+            the chicken shop owners, fostering a positive and cooperative
+            atmosphere during our surveys.
+          </>
+        }
+      />
       <Paragraph
         hierarchy={0}
         title="Survey of small-scale chicken retailers"

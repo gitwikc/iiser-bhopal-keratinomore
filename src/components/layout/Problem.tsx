@@ -87,17 +87,19 @@ const Problem: React.FC<ProblemProps> = ({
           (layout === ProblemLayout.GRAPHIC_LEFT && "flex-row")
         }`}
       >
-        <motion.div
-          variants={containerMemberVariants}
-          initial="graphicInitial"
-          whileInView="reveal"
-          whileHover={{ scale: 1.02 }}
-          transition={{ ease: "easeOut", duration: 1 }}
-          viewport={{ once: true }}
-          className="graphic"
-        >
-          {graphic}
-        </motion.div>
+        {graphic && (
+          <motion.div
+            variants={containerMemberVariants}
+            initial="graphicInitial"
+            whileInView="reveal"
+            // whileHover={{ scale: 1.02 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            viewport={{ once: true }}
+            className="graphic"
+          >
+            {graphic}
+          </motion.div>
+        )}
         <motion.div
           variants={containerMemberVariants}
           initial="contentInitial"
