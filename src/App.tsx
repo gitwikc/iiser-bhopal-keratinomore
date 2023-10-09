@@ -16,6 +16,8 @@ import BackToTopButton from "./components/ui/BackToTopButton";
 import Sustainable from "./routes/humanPractices/Sustainable";
 import Experiments from "./routes/wetlab/Experiments";
 import Notebook from "./routes/wetlab/Notebook";
+import Inclusivity from "./routes/humanPractices/inclusivity";
+import Team from "./routes/team/Team";
 
 const App = () => {
   const location = useLocation();
@@ -60,6 +62,8 @@ const App = () => {
         {/* Special Prizes */}
         <Route path="/education" element={<Education />} />
         <Route path="/model" element={<Model />} />
+        {/* Team*/}
+        <Route path="/team" element={<Team />} />
         {/* Wetlab */}
         <Route path="/notebook" element={<Notebook />} />
         <Route path="/experiments" element={<Experiments />} />

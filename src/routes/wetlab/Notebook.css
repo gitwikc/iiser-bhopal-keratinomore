@@ -1,12 +1,19 @@
 @import "/src/index.css";
 
+
+.main-body {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 .background-image {
     background-image: url('https://static.igem.wiki/teams/4958/wiki/wet-lab-notebook-1.png');
     
     background-size: cover;
     height: 100%;
-    min-height: 1200px;
+    min-height: 1000px;
     z-index: -1;
+    border-radius: 40px;
 }
 
 .elements {
@@ -18,16 +25,17 @@
 }
 
 .left-elements {
-    padding-top: 280px;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 18em;
+    
 }
 
 .right-elements {
-    padding-top: 140px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,7 +47,7 @@
 
 }
 .calender {
-    background-color: #8997F3;
+    background-color: theme("colors.primary-2");
     color: white;
     border: none;
     padding: 5px;
@@ -77,6 +85,7 @@
   
  .round-6:hover {
    background-color: #8997F3;
+   color: white;
   }
   
   .round-6:active {

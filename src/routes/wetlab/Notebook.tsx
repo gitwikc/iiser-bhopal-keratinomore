@@ -9,6 +9,7 @@ const Notebook = () => <div className="Notebook">
         </>
       }
     />
+    <div className="main-body">
     <div className="background-image">
     <div className="button-calender"><button className="calender">Calender</button></div>
        <div className="elements">
@@ -31,7 +32,7 @@ const Notebook = () => <div className="Notebook">
         </div>
        </div>
     </div>
-
+    </div>
 
 </div>;
 

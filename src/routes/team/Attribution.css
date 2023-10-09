@@ -1,0 +1,12 @@
+@import "/src/index.css";
+
+#igem-attribution-form {
+    height: 4900px;
+    width: 75%;
+}
+
+.iframe-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
