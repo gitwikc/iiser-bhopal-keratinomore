@@ -1,7 +1,17 @@
 import "./Sidebar.css";
 import React from "react";
 
-export const Sidebar = ({ width, height, children }) => {
+type SidebarProps = {
+  width: number | string;
+  height: number | string;
+  children: React.ReactNode;
+};
+
+export const Sidebar: React.FC<SidebarProps> = ({
+  width,
+  height,
+  children,
+}) => {
   const [xPosition, setX] = React.useState(-width);
 
   const toggleMenu = () => {
@@ -22,14 +32,14 @@ export const Sidebar = ({ width, height, children }) => {
         style={{
           transform: `translatex(${xPosition}px)`,
           width: width,
-          minHeight: height
+          minHeight: height,
         }}
       >
         <button
           onClick={() => toggleMenu()}
           className="toggle-menu"
           style={{
-            transform: `translate(${width}px, 30vh)`
+            transform: `translate(${width}px, 30vh)`,
           }}
         ></button>
         <div className="content">{children}</div>

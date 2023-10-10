@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -58,6 +58,8 @@ export const data = {
   ],
 };
 
-export default function WorldFeather() {
+const WorldFeather: React.FC = () => {
   return <Line options={options} data={data} />;
-}
+};
+
+export default WorldFeather;

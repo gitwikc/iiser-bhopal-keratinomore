@@ -1,14 +1,13 @@
 import * as React from "react";
 import HeroSection from "../../../components/layout/HeroSection";
 import Paragraph from "../../../components/layout/Paragraph";
-import SelectTabButton from "../../../components/ui/Tabs/SelectTabButton";
 
-import "./index.css";
 import Tabs from "../../../components/ui/Tabs";
-import Understanding from "./tabs/Understanding";
-import DesignExecution from "./tabs/DesignExecution";
+import "./index.css";
 import Closing from "./tabs/Closing";
+import DesignExecution from "./tabs/DesignExecution";
 import Spreading from "./tabs/Spreading";
+import Understanding from "./tabs/Understanding";
 
 const Integrated: React.FC = () => {
   return (
